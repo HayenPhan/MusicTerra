@@ -5,7 +5,11 @@ Temp/
 Obj/
 UnityGenerated/
 Library/
-Assets/
+Assets/*
+
+# Exclude scripts from ignore #
+!Assets/Scripts
+
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
