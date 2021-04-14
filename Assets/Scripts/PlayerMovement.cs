@@ -36,7 +36,26 @@ public class PlayerMovement : MonoBehaviour
         moveDirection = new Vector3(moveX, 0, moveZ);
 
         // If walkspeed is 5, moveZ will be multiplied by 5. So it walks 5 times faste
-        moveDirection *= walkSpeed;
+        // moveDirection *= walkSpeed;
+
+        // If our movement is not equal to 0, 0, 0 then..
+        if(moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift))
+        {
+            // Walk
+            Walk();
+        }
+        else if(moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift)){
+            Run();
+        }
+        else if(moveDirection == Vector3.zero)
+        {
+            // Idle
+            Idle();
+        }
+
+        // // Multiply direction with wanted speed
+        moveDirection *= moveSpeed;
+
 
         // Time.delta -> doesn't matter how many frames you have, you will still move the same amount of time.
         controller.Move(moveDirection * Time.deltaTime);
@@ -49,8 +68,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Walk()
     {
+        moveSpeed = walkSpeed;
         // Missing code
-        anim.SetFloat("Speed", 0.5f);
+        anim.SetFloat("Speed", 0.5f, 01f, Time.deltaTime);
+        Debug.Log("Walk");
+    }
+
+    private void Run()
+    {
+        moveSpeed = runSpeed;
+        // 0,1f + Time.deltaTime is going to smoothen the animation
+        anim.SetFloat("Speed", 1, 0.1f, Time.deltaTime);
     }
 
 }
