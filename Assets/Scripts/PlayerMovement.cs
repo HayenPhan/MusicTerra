@@ -13,10 +13,12 @@ public class PlayerMovement : MonoBehaviour
 
     // References
     private CharacterController controller;
+    private Animator anim;
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -38,6 +40,17 @@ public class PlayerMovement : MonoBehaviour
 
         // Time.delta -> doesn't matter how many frames you have, you will still move the same amount of time.
         controller.Move(moveDirection * Time.deltaTime);
+    }
+
+    private void Idle()
+    {
+        anim.SetFloat("Speed", 0);
+    }
+
+    private void Walk()
+    {
+        // Missing code
+        anim.SetFloat("Speed", 0.5f);
     }
 
 }
