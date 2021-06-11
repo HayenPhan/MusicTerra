@@ -12,8 +12,10 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
+
         // Parent is the Player
         parent = transform.parent;
+
         Cursor.lockState = CursorLockMode.Locked;
     }
 

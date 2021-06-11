@@ -32,8 +32,12 @@ public class PlayerMovement : MonoBehaviour
         float moveZ = Input.GetAxis("Vertical");
         float moveX = Input.GetAxis("Horizontal");
 
+
         // x, y, z
-        moveDirection = new Vector3(moveX, 0, moveZ);
+        moveDirection = Camera.main.transform.forward * moveZ + Camera.main.transform.right * moveX;
+
+        // Makes the player move in the right directions even when rotating with mouse
+        // moveDirection = transform.TransformDirection(moveDirection);
 
         // If walkspeed is 5, moveZ will be multiplied by 5. So it walks 5 times faste
         // moveDirection *= walkSpeed;
