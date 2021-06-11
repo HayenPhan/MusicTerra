@@ -70,8 +70,7 @@ public class PlayerMovement : MonoBehaviour
     {
         moveSpeed = walkSpeed;
         // Missing code
-        anim.SetFloat("Speed", 0.5f, 01f, Time.deltaTime);
-        Debug.Log("Walk");
+        anim.SetFloat("Speed", 0.8f, 01f, Time.deltaTime);
     }
 
     private void Run()
