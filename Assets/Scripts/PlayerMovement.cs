@@ -32,8 +32,11 @@ public class PlayerMovement : MonoBehaviour
         float moveZ = Input.GetAxis("Vertical");
         float moveX = Input.GetAxis("Horizontal");
 
+        // x, y, z <-- used this code first
+        //moveDirection = new Vector3(moveX, 0, moveZ);
 
-        // x, y, z
+        // x, y, z <-- Add camera main forward and right to move character in the direction of the camera.
+        // If you don't do this, your character will move the opposite direction, because it doesn't know the position of the camera.
         moveDirection = Camera.main.transform.forward * moveZ + Camera.main.transform.right * moveX;
 
         // Makes the player move in the right directions even when rotating with mouse
