@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Music Terra new.unity
+    guid: 08c400686f1894a0fab9b6acd1f7fcba
+  - enabled: 1
+    path: Assets/Scenes/MusicLobby.unity
+    guid: a2f54ae0f5cd846e2b6f6635b6059272
   m_configObjects: {}
