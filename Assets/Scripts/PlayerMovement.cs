@@ -23,7 +23,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if(Camera.main != null) {
         Move();
+        }
     }
 
     private void Move()
@@ -37,35 +39,35 @@ public class PlayerMovement : MonoBehaviour
 
         // x, y, z <-- Add camera main forward and right to move character in the direction of the camera.
         // If you don't do this, your character will move the opposite direction, because it doesn't know the position of the camera.
-        moveDirection = Camera.main.transform.forward * moveZ + Camera.main.transform.right * moveX;
+            moveDirection = Camera.main.transform.forward * moveZ + Camera.main.transform.right * moveX;
 
-        // Makes the player move in the right directions even when rotating with mouse
-        // moveDirection = transform.TransformDirection(moveDirection);
+            // Makes the player move in the right directions even when rotating with mouse
+            // moveDirection = transform.TransformDirection(moveDirection);
 
-        // If walkspeed is 5, moveZ will be multiplied by 5. So it walks 5 times faste
-        // moveDirection *= walkSpeed;
+            // If walkspeed is 5, moveZ will be multiplied by 5. So it walks 5 times faste
+            // moveDirection *= walkSpeed;
 
-        // If our movement is not equal to 0, 0, 0 then..
-        if(moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift))
-        {
-            // Walk
-            Walk();
-        }
-        else if(moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift)){
-            Run();
-        }
-        else if(moveDirection == Vector3.zero)
-        {
-            // Idle
-            Idle();
-        }
+            // If our movement is not equal to 0, 0, 0 then..
+            if(moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift))
+            {
+                // Walk
+                Walk();
+            }
+            else if(moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift)){
+                Run();
+            }
+            else if(moveDirection == Vector3.zero)
+            {
+                // Idle
+                Idle();
+            }
 
-        // // Multiply direction with wanted speed
-        moveDirection *= moveSpeed;
+            // // Multiply direction with wanted speed
+            moveDirection *= moveSpeed;
 
 
-        // Time.delta -> doesn't matter how many frames you have, you will still move the same amount of time.
-        controller.Move(moveDirection * Time.deltaTime);
+            // Time.delta -> doesn't matter how many frames you have, you will still move the same amount of time.
+            controller.Move(moveDirection * Time.deltaTime);
     }
 
     private void Idle()
