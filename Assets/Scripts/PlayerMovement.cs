@@ -20,6 +20,18 @@ public class PlayerMovement : NetworkBehaviour
     {
         controller = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
+        if (GameObject.Find ("Player [connId=0]" ) != null) {
+            GameObject chatUIInstance = (GameObject)Instantiate(Resources.Load("ChatUI"));
+            Debug.Log(chatUIInstance);
+        } else {
+            Debug.Log ("not there");
+        }
+
+            if (GameObject.Find ("Player(Clone)" ) != null) {
+            Debug.Log ("clone");
+        } else {
+            Debug.Log ("not there clone");
+        }
     }
 
     private void HandleMovement() {
