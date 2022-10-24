@@ -5,29 +5,32 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     // Variables
-    [SerializeField] private float mouseSensitivity;
+    // [SerializeField] private float mouseSensitivity;
 
-    // References
-    private Transform parent;
+    // // // References
+    // private Transform parent;
 
-    private void Start()
-    {
 
-        // Parent is the Player
-        parent = transform.parent;
+    // private void Start()
+    // {
 
-        // Cursor.lockState = CursorLockMode.Locked;
-    }
+    //     // Parent is the Player
+    //     parent = transform.parent;
 
-    private void Update()
-    {
-        Rotate();
-    }
+    //     Debug.Log(parent);
 
-    private void Rotate()
-    {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+    //     // Cursor.lockState = CursorLockMode.Locked;
+    // }
 
-        parent.Rotate(Vector3.up, mouseX);
-    }
+    // private void Update()
+    // {
+    //     Rotate();
+    // }
+
+    // private void Rotate()
+    // {
+    //     float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+
+    //     parent.Rotate(Vector3.up, mouseX);
+    // }
 }

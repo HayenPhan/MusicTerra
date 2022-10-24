@@ -15,6 +15,16 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Animator anim;
 
+    //Camera
+    //[Range(-45, -15)]
+    public int minAngle = -30;
+    //[Range(30, 80)]
+    public int maxAngle = 45;
+
+    public int sensitivity = 200;
+    private Transform cam;
+
+
     private void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -90,6 +100,9 @@ public class PlayerMovement : MonoBehaviour
         // }
          if(Camera.main != null) {
             HandleMovement();
+            Rotate();
+         } else {
+            Debug.Log("CAMERA IS NULL");
          }
     }
 
@@ -154,4 +167,16 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("Speed", 1, 0.1f, Time.deltaTime);
     }
 
+    // Camera rotation
+
+    private void Rotate()
+    {
+        // FIX THIS!!!
+        transform.Rotate(Vector3.up * sensitivity * Time.deltaTime * Input.GetAxis("Mouse X"));
+
+        moveDirection.x -= Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
+        moveDirection.x = Mathf.Clamp(moveDirection.x, minAngle, maxAngle);
+
+        cam.localEulerAngles = moveDirection;
+    }
 }
