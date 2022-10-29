@@ -4,20 +4,31 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    // Variables
+    public Transform player;
+
+    void Update() {
+        transform.position = player.transform.position + new Vector3(0, 1, -5);
+    }
+    // public float pLerp = .02f;
+    // public float rLerp = .01f;
+
+    // void Update()
+    // {
+    //     transform.position = Vector3.Lerp(transform.position, camTarget.position, pLerp);
+    //     transform.rotation = Quaternion.Lerp(transform.rotation, camTarget.rotation, rLerp);
+    // }
+
+    // // Variables
     // [SerializeField] private float mouseSensitivity;
 
-    // // // References
-    // private Transform parent;
-
+    // // // // References
+    // public Transform parent;
 
     // private void Start()
     // {
 
     //     // Parent is the Player
     //     parent = transform.parent;
-
-    //     Debug.Log(parent);
 
     //     // Cursor.lockState = CursorLockMode.Locked;
     // }
@@ -33,4 +44,5 @@ public class CameraController : MonoBehaviour
 
     //     parent.Rotate(Vector3.up, mouseX);
     // }
+
 }
