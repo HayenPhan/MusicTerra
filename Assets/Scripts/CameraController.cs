@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform player;
+    // public Transform player;
 
-    void Update() {
-        transform.position = player.transform.position + new Vector3(0, 1, -5);
-    }
+    // void Update() {
+    //     transform.position = player.transform.position + new Vector3(0, 1, -5);
+    // }
+
     // public float pLerp = .02f;
     // public float rLerp = .01f;
 
