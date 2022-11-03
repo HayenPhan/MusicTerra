@@ -34,11 +34,12 @@ public class PlayerMovement : MonoBehaviour
         // //transform.position = player position, groundcheckdistance = radiance of the sphere, groundmask is layer check if were grounded.
         // isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundMask);
 
-        float moveZ = Input.GetAxis("Vertical");
+        // Keyboard input
         float moveX = Input.GetAxis("Horizontal");
+        float moveZ = Input.GetAxis("Vertical");
 
+        // Place keyboard input X and Z in moveDirection
         moveDirection = new Vector3(moveX, 0, moveZ);
-        // moveDirection = transform.TransformDirection(moveDirection);
 
         if(moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift)) {
             // Walk
@@ -52,17 +53,22 @@ public class PlayerMovement : MonoBehaviour
             Idle();
         }
 
-        moveDirection.Normalize();
-
+        // Speed up moveDirection
         moveDirection *= moveSpeed;
 
-        controller.Move(moveDirection * Time.deltaTime);
+        // Move
+        controller.Move(moveDirection * Time.deltaTime * 2f);
+
+        //Rotate
     }
 
     private void Update()
     {
         Move();
     }
+
+
+    // OLD
 
     private void Idle()
     {
@@ -74,7 +80,9 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log("Walks");
         moveSpeed = walkSpeed;
-        // // Missing code
+
+        // transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (moveDirection), Time.deltaTime * 40f);
+
         anim.SetFloat("Speed", 0.5f);
     }
 
