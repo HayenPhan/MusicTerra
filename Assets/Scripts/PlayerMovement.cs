@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 v_movement;
     private Vector3 v_velocity;
 
+    private Vector3 moveDirection;
+
     private void Start()
     {
         charController = GetComponent<CharacterController>();
@@ -34,8 +36,8 @@ public class PlayerMovement : MonoBehaviour
         inputX = Input.GetAxis("Horizontal");
         inputZ = Input.GetAxis("Vertical");
 
-        // // Place keyboard input X and Z in moveDirection
-        // moveDirection = new Vector3(inputX, 0, inputZ);
+        // Place keyboard input X and Z in moveDirection
+        moveDirection = new Vector3(inputX, 0, inputZ);
 
         // if(moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift)) {
         //     // Walk
@@ -65,8 +67,15 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate() {
         // FixedUpdate should be used instead of update when dealing with RigidBody
 
-        // input forward
-        v_movement = charController.transform.forward * inputZ;
+        if(moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift)) {
+            Walk();
+        } else if(moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift)) {
+            // Run
+            Run();
+        } else if(moveDirection == Vector3.zero) {
+            // Idle
+            Idle();
+        }
 
         // char rotate
         // WORKS
@@ -78,26 +87,27 @@ public class PlayerMovement : MonoBehaviour
 
     // OLD
 
-    // private void Idle()
-    // {
-    //     Debug.Log("Idles");
-    //     animator.SetFloat("Speed", 0);
-    // }
+    private void Idle()
+    {
+        Debug.Log("Idles");
+        animator.SetFloat("Speed", 0);
+    }
 
-    // private void Walk()
-    // {
-    //     Debug.Log("Walks");
-    //     moveSpeed = walkSpeed;
+    private void Walk()
+    {
+        Debug.Log("Walks");
+        moveSpeed = walkSpeed;
 
-    //     // transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (moveDirection), Time.deltaTime * 40f);
+        // transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (moveDirection), Time.deltaTime * 40f);
+        // input forward
+        v_movement = charController.transform.forward * inputZ;
+        animator.SetFloat("Speed", 0.5f);
+    }
 
-    //     animator.SetFloat("Speed", 0.5f);
-    // }
-
-    // private void Run()
-    // {
-    //     moveSpeed = runSpeed;
-    //     // // 0,1f + Time.deltaTime is going to smoothen the animation
-    //     animator.SetFloat("Speed", 1);
-    // }
+    private void Run()
+    {
+        moveSpeed = runSpeed;
+        // // 0,1f + Time.deltaTime is going to smoothen the animation
+        animator.SetFloat("Speed", 1);
+    }
 }
