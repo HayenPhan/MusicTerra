@@ -38,25 +38,6 @@ public class PlayerMovement : MonoBehaviour
 
         // Place keyboard input X and Z in moveDirection
         moveDirection = new Vector3(inputX, 0, inputZ);
-
-        // if(moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift)) {
-        //     // Walk
-        //     Walk();
-
-        // } else if(moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift)) {
-        //     // Run
-        //     Run();
-        // } else if(moveDirection == Vector3.zero) {
-        //     // Idle
-        //     Idle();
-        // }
-
-        // // Speed up moveDirection
-        // moveDirection *= moveSpeed;
-
-        // // Move
-        // charController.Move(moveDirection * Time.deltaTime * 2f);
-
     }
 
     private void Update()
@@ -78,19 +59,12 @@ public class PlayerMovement : MonoBehaviour
             Idle();
         }
 
-         // else if(moveDirection != Vector3.zero && !Input.Get(KeyCode.LeftShift) && ) {
-
-        // }
-
-        // char rotate
         // WORKS
         charController.transform.Rotate(Vector3.up * inputX * (100f * Time.deltaTime));
 
         //char move
         charController.Move(v_movement * moveSpeed * Time.deltaTime);
     }
-
-    // OLD
 
     private void Idle()
     {
@@ -115,11 +89,6 @@ public class PlayerMovement : MonoBehaviour
 
         Debug.Log("Walks");
         moveSpeed = walkSpeed;
-
-        // transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (moveDirection), Time.deltaTime * 40f);
-        // input forward
-        // v_movement = charController.transform.forward * inputZ;
-        // animator.SetFloat("Speed", 0.5f);
     }
 
     private void Run()
