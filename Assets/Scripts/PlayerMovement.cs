@@ -72,10 +72,15 @@ public class PlayerMovement : MonoBehaviour
         } else if(moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift)) {
             // Run
             Run();
-        } else if(moveDirection == Vector3.zero) {
+        }
+        else if(moveDirection == Vector3.zero) {
             // Idle
             Idle();
         }
+
+         // else if(moveDirection != Vector3.zero && !Input.Get(KeyCode.LeftShift) && ) {
+
+        // }
 
         // char rotate
         // WORKS
@@ -95,13 +100,26 @@ public class PlayerMovement : MonoBehaviour
 
     private void Walk()
     {
+        if(inputX > -1 && inputX < 0) {
+            Debug.Log("Turns left");
+
+        } else if(inputX > 0 && inputX < 1) {
+            Debug.Log("Turns Right");
+
+        }
+        else {
+            animator.SetFloat("Speed", 0.5f);
+        }
+
+        v_movement = charController.transform.forward * inputZ;
+
         Debug.Log("Walks");
         moveSpeed = walkSpeed;
 
         // transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (moveDirection), Time.deltaTime * 40f);
         // input forward
-        v_movement = charController.transform.forward * inputZ;
-        animator.SetFloat("Speed", 0.5f);
+        // v_movement = charController.transform.forward * inputZ;
+        // animator.SetFloat("Speed", 0.5f);
     }
 
     private void Run()
