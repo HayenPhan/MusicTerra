@@ -18,14 +18,17 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
 
     }
 
-    public void private void OnConnectedToServer(NetworkRunner runner) { Debug.Log("OnConnectedToServer"); }
+    public void OnConnectedToServer(NetworkRunner runner) { Debug.Log("OnConnectedToServer"); }
 
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
     {
         // This is what going to spawn players in the world
         // When the player is joining and WE are the server:
 
-        if(runner.isServer)
+        // ERROR: 'NetworkRunner' does not contain a definition for 'isServer' and no accessible extension method 'isServer'
+        //accepting a first argument of type 'NetworkRunner' could be found (are you missing a using directive or an assembly reference?)
+
+        if(runner.IsServer)
         {
             Debug.Log("OnPlayerJoined we are server. Spawn player");
             runner.Spawn(playerPrefab, Utils.GetRandomSpawnPoint(), Quaternion.identity, player);
@@ -42,7 +45,6 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     public void OnPlayerLeft(NetworkRunner runner, PlayerRef player) { }
     public void OnInputMissing(NetworkRunner runner, PlayerRef player, NetworkInput input) { }
     public void OnShutdown(NetworkRunner runner, ShutdownReason shutdownReason) { Debug.Log("OnShutDown"); }
-    public void OnConnectedToServer(NetworkRunner runner) { }
     public void OnDisconnectedFromServer(NetworkRunner runner) { Debug.Log("OnDisconnectedFromServer"); }
     public void OnConnectRequest(NetworkRunner runner, NetworkRunnerCallbackArgs.ConnectRequest request, byte[] token) { Debug.Log("OnConnectedToServer"); }
     public void OnConnectFailed(NetworkRunner runner, NetAddress remoteAddress, NetConnectFailedReason reason) { Debug.Log("OnConnectFailed"); }
