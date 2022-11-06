@@ -31,6 +31,8 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         if(runner.IsServer)
         {
             Debug.Log("OnPlayerJoined we are server. Spawn player");
+
+            // Quaternion will make sure that the player faces forward
             runner.Spawn(playerPrefab, Utils.GetRandomSpawnPoint(), Quaternion.identity, player);
         }
         else Debug.Log("OnPlayerJoined");
@@ -39,7 +41,6 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     public void OnInput(NetworkRunner runner, NetworkInput input)
     {
         // Collect our input and send it to the network so the host can take care of it and act upon it
-
     }
 
     public void OnPlayerLeft(NetworkRunner runner, PlayerRef player) { }
