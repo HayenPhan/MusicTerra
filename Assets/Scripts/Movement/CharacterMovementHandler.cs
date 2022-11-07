@@ -16,6 +16,8 @@ public class CharacterMovementHandler : NetworkBehaviour
 
     private Animator animator;
 
+    private Vector3 test;
+
     // Script is added to Player prefab
     // Other components
     NetworkCharacterControllerPrototypeCustom networkCharacterControllerPrototypeCustom;
@@ -57,35 +59,35 @@ public class CharacterMovementHandler : NetworkBehaviour
         if(GetInput(out NetworkInputData networkInputData))
         {
             // Z = Y because Vector2 is used in CharacterInputHandler
-            moveDirection = new Vector3(networkInputData.movementInput.x, 0, networkInputData.movementInput.y);
+            // moveDirection = new Vector3(networkInputData.movementInput.x, 0, networkInputData.movementInput.y);
 
-                if(moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift)) {
-                    // WALK
-                    if(networkInputData.movementInput.x > -1 && networkInputData.movementInput.x < 0) {
-                        Debug.Log("Turns left");
+            //     if(moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift)) {
+            //         // WALK
+            //         if(networkInputData.movementInput.x > -1 && networkInputData.movementInput.x < 0) {
+            //             Debug.Log("Turns left");
 
-                    } else if(networkInputData.movementInput.x > 0 && networkInputData.movementInput.x < 1) {
-                        Debug.Log("Turns Right");
-                    }
-                    else {
-                        animator.SetFloat("Speed", 0.5f);
-                    }
+            //         } else if(networkInputData.movementInput.x > 0 && networkInputData.movementInput.x < 1) {
+            //             Debug.Log("Turns Right");
+            //         }
+            //         else {
+            //             animator.SetFloat("Speed", 0.5f);
+            //         }
 
-                    v_movement = networkCharacterControllerPrototypeCustom.transform.forward * networkInputData.movementInput.y;
+            //         v_movement = networkCharacterControllerPrototypeCustom.transform.forward * networkInputData.movementInput.y;
 
-                    Debug.Log("Walks");
-                    moveSpeed = walkSpeed;
-                } else if(moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift)) {
-                    // Run
-                    moveSpeed = runSpeed;
-                    // // 0,1f + Time.deltaTime is going to smoothen the animation
-                    animator.SetFloat("Speed", 1);
-                }
-            else if(moveDirection == Vector3.zero) {
-                // Idle
-                Debug.Log("Idles");
-                animator.SetFloat("Speed", 0);
-            }
+            //         Debug.Log("Walks");
+            //         moveSpeed = walkSpeed;
+            //     } else if(moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift)) {
+            //         // Run
+            //         moveSpeed = runSpeed;
+            //         // // 0,1f + Time.deltaTime is going to smoothen the animation
+            //         animator.SetFloat("Speed", 1);
+            //     }
+            // else if(moveDirection == Vector3.zero) {
+            //     // Idle
+            //     Debug.Log("Idles");
+            //     animator.SetFloat("Speed", 0);
+            // }
 
             // This functions returns the NetworkInputData object
             // Create NetWorkInputData script
@@ -97,17 +99,21 @@ public class CharacterMovementHandler : NetworkBehaviour
 
             // THIS CODE BREAKS
 
-            // Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
-            // moveDirection.Normalize();
+            Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
+            moveDirection.Normalize();
 
-            // networkCharacterControllerPrototypeCustom.Move(moveDirection);
+            networkCharacterControllerPrototypeCustom.Move(moveDirection);
 
-            // CODE ABOVE BREAKS
-            networkCharacterControllerPrototypeCustom.transform.Rotate(Vector3.up * networkInputData.movementInput.x * (100f * Time.deltaTime));
+            // CODE ABOVE BREAK
 
-            networkCharacterControllerPrototypeCustom.Move(v_movement * moveSpeed * Time.deltaTime);
+            // CODE 2
+            // networkCharacterControllerPrototypeCustom.transform.Rotate(Vector3.up * networkInputData.movementInput.x * (100f * Time.deltaTime));
 
-                    // WORKS
+            // networkCharacterControllerPrototypeCustom.Move(networkCharacterControllerPrototypeCustom.transform.forward * networkInputData.movementInput.y * moveSpeed * Time.deltaTime);
+
+            // CODE 2
+
+                    // OLD CODE
                 // charController.transform.Rotate(Vector3.up * inputX * (100f * Time.deltaTime));
 
                 // //char move
