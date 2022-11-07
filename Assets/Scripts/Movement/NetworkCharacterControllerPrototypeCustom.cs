@@ -2,6 +2,9 @@ using System;
 using Fusion;
 using UnityEngine;
 
+// 4: This is added to the character with CharacterController
+// Script is added to Player prefab
+
 [RequireComponent(typeof(CharacterController))]
 [OrderBefore(typeof(NetworkTransform))]
 [DisallowMultipleComponent]

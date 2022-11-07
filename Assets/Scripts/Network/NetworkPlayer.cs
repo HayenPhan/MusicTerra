@@ -4,6 +4,7 @@ using UnityEngine;
 using Fusion;
 
 public class NetworkPlayer : NetworkBehaviour, IPlayerLeft
+// 3: Add this script to Player prefab
 {
     // Make it easer to find the NetworkPlayer by using get and set method
     public static NetworkPlayer Local { get; set; }

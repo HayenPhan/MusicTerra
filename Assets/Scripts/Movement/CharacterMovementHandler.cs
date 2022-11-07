@@ -5,6 +5,7 @@ using Fusion;
 
 public class CharacterMovementHandler : NetworkBehaviour
 {
+    // Script is added to Player prefab
     // Other components
     NetworkCharacterControllerPrototypeCustom networkCharacterControllerPrototypeCustom;
 

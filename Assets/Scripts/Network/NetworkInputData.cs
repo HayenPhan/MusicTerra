@@ -14,5 +14,4 @@ public struct NetworkInputData : INetworkInput
     public float rotationInput;
     // Allow the character to jump
     public NetworkBool isJumpPressed;
-
 }

@@ -9,6 +9,13 @@ using System;
 using System.Linq;
 
 public class NetworkRunnerHandler : MonoBehaviour
+
+//1: Add this script to the NetworkRunnerHandler object
+// Initialization of network runner
+// Select client that will become host if there is no host
+// Check if there are unity objects with colliders on them that should be considered
+// Hande networked objects that already exists in the scene
+// Start game with GameMode, Address, Scene, SessionName, Initialized and SceneManager
 {
     public NetworkRunner networkRunnerPrefab;
 

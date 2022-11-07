@@ -6,11 +6,17 @@ using Fusion.Sockets;
 using System;
 
 
-// Handling the spawning of network objects
+// 2: Handling the spawning of network objects
+// Network Runner PF object is selected in Network Runner Handler script in NetworkRunnerHandler object in unity.
+// After initialization in NetWorkRunnerHandler add Spawner script to Network Runner PF object
+
 public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
 {
     // To spawn a player a prefab is needed
     public NetworkPlayer playerPrefab;
+
+    // Other components
+    CharacterInputHandler characterInputHandler;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +52,15 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     public void OnInput(NetworkRunner runner, NetworkInput input)
     {
         // Collect our input and send it to the network so the host can take care of it and act upon it
+        // Check if you are getting the CharacterController from the right player
+
+        // If CharacterController(characterInputHandler) is not assigned yet (==null) && a local player is active
+        if (characterInputHandler == null && NetworkPlayer.Local != null)
+            // Get CharacterInputHandler and assign it to characterInputHandler
+            characterInputHandler = NetworkPlayer.Local.GetComponent<CharacterInputHandler>();
+
+        if (characterInputHandler != null)
+            input.Set(characterInputHandler.GetNetworkInput());
     }
 
     public void OnPlayerLeft(NetworkRunner runner, PlayerRef player) { }
