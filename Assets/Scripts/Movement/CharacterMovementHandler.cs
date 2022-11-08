@@ -106,7 +106,7 @@ public class CharacterMovementHandler : NetworkBehaviour
 
             // THIS CODE BREAKS
             //Rotate view
-            networkCharacterControllerPrototypeCustom.transform.Rotate(Vector3.up * networkInputData.movementInput.x * (100f * Time.deltaTime));
+            // networkCharacterControllerPrototypeCustom.Rotate();
 
             //Move
             Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
