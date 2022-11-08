@@ -9,7 +9,7 @@ public struct NetworkInputData : INetworkInput
     // Read the documentation to rewrite this code using bits
     // This code with vectors and floats is a temporary solution
 
-    public Vector3 movementInput;
+    public Vector2 movementInput;
     // Find out what direction the player is facing with rotationInput
     public float rotationInput;
     // Allow the character to jump
