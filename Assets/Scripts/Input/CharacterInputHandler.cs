@@ -20,7 +20,8 @@ public class CharacterInputHandler : MonoBehaviour
         //Move input
         moveInputVector.x = Input.GetAxis("Horizontal");
         // moveInputVector.z = Input.GetAxis("Vertical");
-        moveInputVector.y = Input.GetAxis("Vertical");
+        moveInputVector.z = Input.GetAxis("Vertical");
+
     }
 
     public NetworkInputData GetNetworkInput()
