@@ -14,6 +14,7 @@ public class CharacterMovementHandler : NetworkBehaviour
     // private Vector3 moveDirection;
 
     // private Animator animator;
+     private CharacterController charController;
 
     // Script is added to Player prefab
     // Other components
@@ -111,6 +112,9 @@ public class CharacterMovementHandler : NetworkBehaviour
             //Move
             Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
             moveDirection.Normalize();
+
+            // charController.Move(moveDirection);
+
             networkCharacterControllerPrototypeCustom.Move(moveDirection);
             // CODE ABOVE BREAK
 
@@ -174,6 +178,4 @@ public class CharacterMovementHandler : NetworkBehaviour
     //     // // 0,1f + Time.deltaTime is going to smoothen the animation
     //     animator.SetFloat("Speed", 1);
     // }
-
-
 }
