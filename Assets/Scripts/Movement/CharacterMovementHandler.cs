@@ -74,7 +74,7 @@ public class CharacterMovementHandler : NetworkBehaviour
 
         // moveDirection = new Vector3(networkInputData.movementInput.x, 0, networkInputData.movementInput.y);
 
-        if(networkInputData.movementInput != Vector2.zero && !Input.GetKey(KeyCode.LeftShift)) {
+        if(networkInputData.movementInput != Vector3.zero && !Input.GetKey(KeyCode.LeftShift)) {
             // Walk
             if(networkInputData.movementInput.x > -1 && networkInputData.movementInput.x < 0) {
             Debug.Log("Turns left");
@@ -87,11 +87,11 @@ public class CharacterMovementHandler : NetworkBehaviour
                 animator.SetFloat("Speed", 0.5f);
             }
 
-            v_movement = charController.transform.forward * networkInputData.movementInput.y;
+            v_movement = charController.transform.forward * networkInputData.movementInput.z;
 
             Debug.Log("Walks");
             moveSpeed = walkSpeed;
-        } else if(networkInputData.movementInput != Vector2.zero && Input.GetKey(KeyCode.LeftShift)) {
+        } else if(networkInputData.movementInput != Vector3.zero && Input.GetKey(KeyCode.LeftShift)) {
             // Run
             moveSpeed = runSpeed;
             // // 0,1f + Time.deltaTime is going to smoothen the animation
@@ -99,7 +99,7 @@ public class CharacterMovementHandler : NetworkBehaviour
 
             Debug.Log("Runs");
         }
-        else if(networkInputData.movementInput == Vector2.zero) {
+        else if(networkInputData.movementInput == Vector3.zero) {
             // Idle
             Debug.Log("Idles");
             animator.SetFloat("Speed", 0);
@@ -115,7 +115,7 @@ public class CharacterMovementHandler : NetworkBehaviour
         // Debug.Log(moveSpeed);
 
             //MoveEEEYEU!!!!
-            Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
+            Vector3 moveDirection = transform.forward * networkInputData.movementInput.z + transform.right * networkInputData.movementInput.x;
             moveDirection.Normalize();
             charController.Move(moveDirection);
         }

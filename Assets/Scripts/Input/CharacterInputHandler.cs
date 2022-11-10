@@ -6,7 +6,7 @@ public class CharacterInputHandler : MonoBehaviour
 {
     // Script is added to Player prefab
 
-    public Vector2 moveInputVector = Vector2.zero;
+    public Vector3 moveInputVector;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,11 @@ public class CharacterInputHandler : MonoBehaviour
         //Move input
         moveInputVector.x = Input.GetAxis("Horizontal");
         // moveInputVector.z = Input.GetAxis("Vertical");
-        moveInputVector.y = Input.GetAxis("Vertical");
+        moveInputVector.z = Input.GetAxis("Vertical");
+
+         // Place keyboard input X and Z in moveDirection
+        moveInputVector = new Vector3(moveInputVector.x, 0, moveInputVector.z);
+
 
     }
 
