@@ -64,9 +64,9 @@ public class CharacterMovementHandler : NetworkBehaviour
         if(GetInput(out NetworkInputData networkInputData))
         {
 
-        moveDirection = new Vector3(networkInputData.movementInput.x, 0, networkInputData.movementInput.y);
+        // moveDirection = new Vector3(networkInputData.movementInput.x, 0, networkInputData.movementInput.y);
 
-        if(moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift)) {
+        if(networkInputData.movementInput != Vector2.zero && !Input.GetKey(KeyCode.LeftShift)) {
             // Walk
             if(networkInputData.movementInput.x > -1 && networkInputData.movementInput.x < 0) {
             Debug.Log("Turns left");
@@ -83,31 +83,43 @@ public class CharacterMovementHandler : NetworkBehaviour
 
             Debug.Log("Walks");
             moveSpeed = walkSpeed;
-        } else if(moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift)) {
+        } else if(networkInputData.movementInput != Vector2.zero && Input.GetKey(KeyCode.LeftShift)) {
             // Run
             moveSpeed = runSpeed;
             // // 0,1f + Time.deltaTime is going to smoothen the animation
             animator.SetFloat("Speed", 1);
+
+            Debug.Log("Runs");
         }
-        else if(moveDirection == Vector3.zero) {
+        else if(networkInputData.movementInput == Vector2.zero) {
             // Idle
             Debug.Log("Idles");
             animator.SetFloat("Speed", 0);
         }
 
-        // WORKS
-        charController.transform.Rotate(Vector3.up * networkInputData.movementInput.x * (100f * Time.deltaTime));
+        // // // WORKS
+        // charController.transform.Rotate(Vector2.up * networkInputData.movementInput.y * (100f * Time.deltaTime));
 
-        //char move
-        charController.Move(v_movement * moveSpeed * Time.deltaTime);
+        // //char move
+        // charController.Move(v_movement * moveSpeed * Time.deltaTime);
+
+        // Debug.Log(v_movement);
+        // Debug.Log(moveSpeed);
 
             //Move
 
             // THIS WORKS
+
             // Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
             // moveDirection.Normalize();
 
+            //new
+            // charController.transform.Rotate(Vector2.up * networkInputData.movementInput.y * (100f * Time.deltaTime));
+            // Vector3 moveDirection = v_movement * moveSpeed * Time.deltaTime;
+
             // charController.Move(moveDirection);
+
+            // Debug.Log(networkInputData.movementInput.y);
 
             // THIS WORKS
         }
