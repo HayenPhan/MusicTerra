@@ -19,6 +19,14 @@ public class CharacterMovementHandler : NetworkBehaviour
     private Animator animator;
     private CharacterController charController;
 
+
+    // NEW
+    // private Vector3 playerVelocity;
+    private bool groundedPlayer;
+    private float playerSpeed = 2.0f;
+    private float jumpHeight = 1.0f;
+    private float gravityValue = -9.81f;
+
     // Script is added to Player prefab
     // Other components
     // NetworkCharacterControllerPrototypeCustom networkCharacterControllerPrototypeCustom;
@@ -106,22 +114,10 @@ public class CharacterMovementHandler : NetworkBehaviour
         // Debug.Log(v_movement);
         // Debug.Log(moveSpeed);
 
-            //Move
-
-            // THIS WORKS
-
-            // Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
-            // moveDirection.Normalize();
-
-            //new
-            // charController.transform.Rotate(Vector2.up * networkInputData.movementInput.y * (100f * Time.deltaTime));
-            // Vector3 moveDirection = v_movement * moveSpeed * Time.deltaTime;
-
-            // charController.Move(moveDirection);
-
-            // Debug.Log(networkInputData.movementInput.y);
-
-            // THIS WORKS
+            //MoveEEEYEU!!!!
+            Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
+            moveDirection.Normalize();
+            charController.Move(moveDirection);
         }
     }
 
