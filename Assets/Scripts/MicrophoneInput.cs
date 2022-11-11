@@ -4,34 +4,34 @@ using UnityEngine;
 
 public class MicrophoneInput : MonoBehaviour
 {
-    AudioSource AudioMic;
+    // AudioSource AudioMic;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        foreach (var device in Microphone.devices)
-        {
-            Debug.Log("Name: " + device);
-        }
+    // // Start is called before the first frame update
+    // void Start()
+    // {
+    //     foreach (var device in Microphone.devices)
+    //     {
+    //         Debug.Log("Name: " + device);
+    //     }
 
-        StartCoroutine(CaptureMic());
-    }
+    //     StartCoroutine(CaptureMic());
+    // }
 
-    IEnumerator CaptureMic()
-    {
-        if (AudioMic == null) AudioMic = GetComponent<AudioSource>();
-        AudioMic.clip = Microphone.Start(null, true, 1, AudioSettings.outputSampleRate);
-        AudioMic.loop = true;
-        while (!(Microphone.GetPosition(null) > 0)) { }
-        Debug.Log("Start Mic(pos): " + Microphone.GetPosition(null));
-        AudioMic.Play();
+    // IEnumerator CaptureMic()
+    // {
+    //     if (AudioMic == null) AudioMic = GetComponent<AudioSource>();
+    //     AudioMic.clip = Microphone.Start(null, true, 1, AudioSettings.outputSampleRate);
+    //     AudioMic.loop = true;
+    //     while (!(Microphone.GetPosition(null) > 0)) { }
+    //     Debug.Log("Start Mic(pos): " + Microphone.GetPosition(null));
+    //     AudioMic.Play();
 
-        yield return null;
-    }
+    //     yield return null;
+    // }
 
-    // Update is called once per frame
-    void Update()
-    {
+    // // Update is called once per frame
+    // void Update()
+    // {
 
-    }
+    // }
 }
