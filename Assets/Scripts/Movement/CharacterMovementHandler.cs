@@ -74,6 +74,11 @@ public class CharacterMovementHandler : NetworkBehaviour
 
         // moveDirection = new Vector3(networkInputData.movementInput.x, 0, networkInputData.movementInput.y);
 
+            //MoveEEEYEU!!!!
+        Vector3 moveDirection = transform.forward * networkInputData.movementInput.z + transform.right * networkInputData.movementInput.x;
+        moveDirection.Normalize();
+        charController.Move(moveDirection);
+
         if(networkInputData.movementInput != Vector3.zero && !Input.GetKey(KeyCode.LeftShift)) {
             // Walk
             if(networkInputData.movementInput.x > -1 && networkInputData.movementInput.x < 0) {
@@ -113,11 +118,6 @@ public class CharacterMovementHandler : NetworkBehaviour
 
         // Debug.Log(v_movement);
         // Debug.Log(moveSpeed);
-
-            //MoveEEEYEU!!!!
-            Vector3 moveDirection = transform.forward * networkInputData.movementInput.z + transform.right * networkInputData.movementInput.x;
-            moveDirection.Normalize();
-            charController.Move(moveDirection);
         }
     }
 
