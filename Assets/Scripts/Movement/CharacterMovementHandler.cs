@@ -19,13 +19,12 @@ public class CharacterMovementHandler : NetworkBehaviour
     private Animator animator;
     private CharacterController charController;
 
+    private Vector3 playerVelocity;
+    private bool groundedPlayer;
+    private float gravityValue = -9.81f;
 
     // NEW
     // private Vector3 playerVelocity;
-    private bool groundedPlayer;
-    private float playerSpeed = 2.0f;
-    private float jumpHeight = 1.0f;
-    private float gravityValue = -9.81f;
 
     // Script is added to Player prefab
     // Other components
@@ -72,46 +71,65 @@ public class CharacterMovementHandler : NetworkBehaviour
         if(GetInput(out NetworkInputData networkInputData))
         {
 
-        // moveDirection = new Vector3(networkInputData.movementInput.x, 0, networkInputData.movementInput.y);
 
-            //MoveEEEYEU!!!!
+        // if(networkInputData.movementInput != Vector3.zero && !Input.GetKey(KeyCode.LeftShift)) {
+        //     // Walk
+        //     if(networkInputData.movementInput.x > -1 && networkInputData.movementInput.x < 0) {
+        //     Debug.Log("Turns left");
+
+        //     } else if(networkInputData.movementInput.x > 0 && networkInputData.movementInput.x < 1) {
+        //         Debug.Log("Turns Right");
+
+        //     }
+        //     else {
+        //         animator.SetFloat("Speed", 0.5f);
+        //     }
+
+        //     v_movement = charController.transform.forward * networkInputData.movementInput.z;
+
+        //     Debug.Log("Walks");
+        //     moveSpeed = walkSpeed;
+        // } else if(networkInputData.movementInput != Vector3.zero && Input.GetKey(KeyCode.LeftShift)) {
+        //     // Run
+        //     moveSpeed = runSpeed;
+        //     // // 0,1f + Time.deltaTime is going to smoothen the animation
+        //     animator.SetFloat("Speed", 1);
+
+        //     Debug.Log("Runs");
+        // }
+        // else if(networkInputData.movementInput == Vector3.zero) {
+        //     // Idle
+        //     Debug.Log("Idles");
+        //     animator.SetFloat("Speed", 0);
+        // }
+
+        groundedPlayer = charController.isGrounded;
+        if(groundedPlayer && playerVelocity.y < 0)
+        {
+            playerVelocity.y = 0f;
+        }
+
+        if(networkInputData.movementInput != Vector3.zero)
+        {
+            transform.forward = networkInputData.movementInput;
+            // v_movement = charController.transform.forward * networkInputData.movementInput.z;
+        }
+
+        Debug.Log(playerVelocity.y);
+
+        playerVelocity.y += gravityValue * Time.deltaTime;
+
+        // moveDirection = new Vector3(networkInputData.movementInput.x, 0, networkInputData.movementInput.y);
+        //MoveEEEYEU!!!!
         Vector3 moveDirection = transform.forward * networkInputData.movementInput.z + transform.right * networkInputData.movementInput.x;
         moveDirection.Normalize();
         charController.Move(moveDirection);
 
-        if(networkInputData.movementInput != Vector3.zero && !Input.GetKey(KeyCode.LeftShift)) {
-            // Walk
-            if(networkInputData.movementInput.x > -1 && networkInputData.movementInput.x < 0) {
-            Debug.Log("Turns left");
-
-            } else if(networkInputData.movementInput.x > 0 && networkInputData.movementInput.x < 1) {
-                Debug.Log("Turns Right");
-
-            }
-            else {
-                animator.SetFloat("Speed", 0.5f);
-            }
-
-            v_movement = charController.transform.forward * networkInputData.movementInput.z;
-
-            Debug.Log("Walks");
-            moveSpeed = walkSpeed;
-        } else if(networkInputData.movementInput != Vector3.zero && Input.GetKey(KeyCode.LeftShift)) {
-            // Run
-            moveSpeed = runSpeed;
-            // // 0,1f + Time.deltaTime is going to smoothen the animation
-            animator.SetFloat("Speed", 1);
-
-            Debug.Log("Runs");
-        }
-        else if(networkInputData.movementInput == Vector3.zero) {
-            // Idle
-            Debug.Log("Idles");
-            animator.SetFloat("Speed", 0);
-        }
+        // Character slowly descends through floor using this line of code
+        // charController.Move(playerVelocity * Time.deltaTime);
 
         // // // WORKS
-        // charController.transform.Rotate(Vector2.up * networkInputData.movementInput.y * (100f * Time.deltaTime));
+        // charController.transform.Rotate(Vector3.up * networkInputData.movementInput.z * (100f * Time.deltaTime));
 
         // //char move
         // charController.Move(v_movement * moveSpeed * Time.deltaTime);
