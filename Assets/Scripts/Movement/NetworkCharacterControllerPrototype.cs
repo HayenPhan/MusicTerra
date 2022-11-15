@@ -8,7 +8,7 @@ using UnityEngine;
 // ReSharper disable once CheckNamespace
 public class NetworkCharacterControllerPrototype : NetworkTransform {
   [Header("Character Controller Settings")]
-  public float gravity       = -20.0f;
+  public float gravity       = -20f;
   public float jumpImpulse   = 8.0f;
   public float acceleration  = 10.0f;
   public float braking       = 10.0f;
@@ -88,7 +88,6 @@ public class NetworkCharacterControllerPrototype : NetworkTransform {
   /// <param name="direction">Intended movement direction, subject to movement query, acceleration and max speed values.</param>
   /// </summary>
   public virtual void Move(Vector3 direction) {
-    Debug.Log("Move character");
     var deltaTime    = Runner.DeltaTime;
     var previousPos  = transform.position;
     var moveVelocity = Velocity;

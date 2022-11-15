@@ -12,7 +12,7 @@ public class CharacterMovementHandler : NetworkBehaviour
     // Other components
     // NetworkCharacterControllerPrototypeCustom networkCharacterControllerPrototypeCustom;
 
-    private float gravity = 3f;
+    // private float gravity = 3f;
 
     NetworkCharacterControllerPrototype networkCharacterControllerPrototype;
 
