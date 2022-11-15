@@ -7,16 +7,18 @@ public class CharacterInputHandler : MonoBehaviour
     // Script is added to Player prefab
 
     public Vector3 moveInputVector;
+    private CharacterController charController;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        charController = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         //Move input
         moveInputVector.x = Input.GetAxis("Horizontal");
         // moveInputVector.z = Input.GetAxis("Vertical");
