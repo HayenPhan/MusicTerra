@@ -6,28 +6,33 @@ public class CharacterInputHandler : MonoBehaviour
 {
     // Script is added to Player prefab
 
-    public Vector3 moveInputVector;
-    private CharacterController charController;
+    // public Vector3 moveInputVector;
+    // private CharacterController charController;
 
     // Start is called before the first frame update
+
+    Vector2 moveInputVector = Vector2.zero;
+
     void Start()
     {
-        charController = GetComponent<CharacterController>();
+        // charController = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        //Move input
-        moveInputVector.x = Input.GetAxis("Horizontal");
+        // //Move input
+        // moveInputVector.x = Input.GetAxis("Horizontal");
+        // // moveInputVector.z = Input.GetAxis("Vertical");
         // moveInputVector.z = Input.GetAxis("Vertical");
-        moveInputVector.z = Input.GetAxis("Vertical");
 
-         // Place keyboard input X and Z in moveDirection
-        moveInputVector = new Vector3(moveInputVector.x, 0, moveInputVector.z);
+        //  // Place keyboard input X and Z in moveDirection
+        // moveInputVector = new Vector3(moveInputVector.x, 0, moveInputVector.z);
 
-
+         //Move input
+        moveInputVector.x = Input.GetAxis("Horizontal");
+        moveInputVector.y = Input.GetAxis("Vertical");
     }
 
     public NetworkInputData GetNetworkInput()

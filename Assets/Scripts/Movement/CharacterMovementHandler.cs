@@ -6,7 +6,7 @@ using Fusion;
 public class CharacterMovementHandler : NetworkBehaviour
 {
     private Animator animator;
-    private CharacterController charController;
+    // private CharacterController charController;
 
     // Script is added to Player prefab
     // Other components
@@ -14,16 +14,19 @@ public class CharacterMovementHandler : NetworkBehaviour
 
     private float gravity = 3f;
 
+    NetworkCharacterControllerPrototype networkCharacterControllerPrototype;
+
     private void Awake()
     {
+        networkCharacterControllerPrototype = GetComponent<NetworkCharacterControllerPrototype>();
         // Fetch network character controller
-        charController = GetComponent<CharacterController>();
+        // charController = GetComponent<CharacterController>();
         // animator = GetComponentInChildren<Animator>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        moveSpeed = 5;
+        // moveSpeed = 5;
     }
 
     // Update is called once per frame
@@ -38,19 +41,24 @@ public class CharacterMovementHandler : NetworkBehaviour
             if(GetInput(out NetworkInputData networkInputData))
             {
 
-                // This works but character floats above ground
-                //  networkInputData.movementInput *= moveSpeed;
-                // charController.Move(networkInputData.movementInput);
-                if(charController.isGrounded)
-                {
-                    Debug.Log("Character is grounded!");
-                    networkInputData.movementInput *= moveSpeed;
-                }
+                //Move
+                Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
+                moveDirection.Normalize();
 
-                // Use this to ground the character
-                networkInputData.movementInput.y -= gravity;
+                networkCharacterControllerPrototype.Move(moveDirection);
 
-                charController.Move(networkInputData.movementInput * Time.deltaTime);
+                // // This works but character floats above ground
+                // //  networkInputData.movementInput *= moveSpeed;
+                // // charController.Move(networkInputData.movementInput);
+                // if(charController.isGrounded)
+                // {
+                //     Debug.Log("Character is grounded!");
+                //     networkInputData.movementInput *= moveSpeed;
+                // }
+
+                // // Use this to ground the character
+
+                // charController.Move(networkInputData.movementInput * Time.deltaTime);
             }
     }
 }
