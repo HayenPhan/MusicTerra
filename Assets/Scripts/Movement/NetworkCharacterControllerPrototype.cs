@@ -121,6 +121,7 @@ public class NetworkCharacterControllerPrototype : NetworkTransform {
 
     public void Rotate(float rotationY)
     {
+        // transform.Rotate(0, rotationY * Runner.DeltaTime * rotationSpeed, 0);
         transform.Rotate(0, rotationY * Runner.DeltaTime * rotationSpeed, 0);
     }
 }

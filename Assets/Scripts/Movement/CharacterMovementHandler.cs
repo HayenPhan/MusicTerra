@@ -6,7 +6,7 @@ using Fusion;
 public class CharacterMovementHandler : NetworkBehaviour
 {
     private Animator animator;
-    // private CharacterController charController;
+    private CharacterController charController;
 
     // Script is added to Player prefab
     // Other components
@@ -16,12 +16,17 @@ public class CharacterMovementHandler : NetworkBehaviour
 
     NetworkCharacterControllerPrototype networkCharacterControllerPrototype;
 
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float walkSpeed;
+    [SerializeField] private float runSpeed;
+
+
     private void Awake()
     {
         networkCharacterControllerPrototype = GetComponent<NetworkCharacterControllerPrototype>();
         // Fetch network character controller
-        // charController = GetComponent<CharacterController>();
-        // animator = GetComponentInChildren<Animator>();
+        charController = GetComponent<CharacterController>();
+        animator = GetComponentInChildren<Animator>();
     }
     // Start is called before the first frame update
     void Start()
@@ -40,6 +45,20 @@ public class CharacterMovementHandler : NetworkBehaviour
         //Get the input from the network
             if(GetInput(out NetworkInputData networkInputData))
             {
+                // networkCharacterControllerPrototype.Rotate(networkInputData.rotationInput);
+
+                if(networkInputData.movementInput != Vector2.zero && !Input.GetKey(KeyCode.LeftShift)) {
+                    animator.SetFloat("Speed", 0.5f);
+                    moveSpeed = walkSpeed;
+                } else if(networkInputData.movementInput != Vector2.zero && Input.GetKey(KeyCode.LeftShift)) {
+                    // Run
+                    moveSpeed = runSpeed;
+                    animator.SetFloat("Speed", 1);
+                }
+                else if(networkInputData.movementInput == Vector2.zero) {
+                    // Idle
+                    animator.SetFloat("Speed", 0);
+                }
 
                 //Move
                 Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
