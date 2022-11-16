@@ -20,6 +20,8 @@ public class CharacterMovementHandler : NetworkBehaviour
     [SerializeField] private float walkSpeed;
     [SerializeField] private float runSpeed;
 
+    private Vector3 v_movement;
+
 
     private void Awake()
     {
@@ -46,7 +48,6 @@ public class CharacterMovementHandler : NetworkBehaviour
             if(GetInput(out NetworkInputData networkInputData))
             {
                 // networkCharacterControllerPrototype.Rotate(networkInputData.rotationInput);
-
                 if(networkInputData.movementInput != Vector2.zero && !Input.GetKey(KeyCode.LeftShift)) {
                     animator.SetFloat("Speed", 0.5f);
                     moveSpeed = walkSpeed;
@@ -61,10 +62,13 @@ public class CharacterMovementHandler : NetworkBehaviour
                 }
 
                 //Move
+                // Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
+
                 Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
+
                 moveDirection.Normalize();
 
-                networkCharacterControllerPrototype.Move(moveDirection);
+                networkCharacterControllerPrototype.Move(moveDirection, moveSpeed);
 
                 // // This works but character floats above ground
                 // //  networkInputData.movementInput *= moveSpeed;
