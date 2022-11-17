@@ -18,13 +18,20 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     // Other components
     CharacterInputHandler characterInputHandler;
 
+    public static bool isSpawned { get; set; }
+
     // Start is called before the first frame update
+
     void Start()
     {
 
     }
 
-    public void OnConnectedToServer(NetworkRunner runner) { Debug.Log("OnConnectedToServer"); }
+    private void Awake() {
+
+    }
+
+    public void OnConnectedToServer(NetworkRunner runner) { Debug.Log("OnConnectedToServer");  }
 
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
     {
@@ -34,6 +41,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         // ERROR: 'NetworkRunner' does not contain a definition for 'isServer' and no accessible extension method 'isServer'
         //accepting a first argument of type 'NetworkRunner' could be found (are you missing a using directive or an assembly reference?)
 
+                    // Player is spawned
         if(runner.IsServer)
         {
             Debug.Log("OnPlayerJoined we are server. Spawn player");
@@ -45,12 +53,14 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
 
             // Quaternion will make sure that the player faces forward
             runner.Spawn(playerPrefab, Utils.GetRandomSpawnPoint(), Quaternion.identity, player);
+            isSpawned = true;
         }
         else Debug.Log("OnPlayerJoined");
     }
 
     public void OnInput(NetworkRunner runner, NetworkInput input)
     {
+
         // Collect our input and send it to the network so the host can take care of it and act upon it
         // Check if you are getting the CharacterController from the right player
 

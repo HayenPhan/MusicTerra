@@ -5,6 +5,7 @@ using Fusion;
 
 public class NetworkPlayer : NetworkBehaviour, IPlayerLeft
 // 3: Add this script to Player prefab
+
 {
     // Make it easer to find the NetworkPlayer by using get and set method
     public static NetworkPlayer Local { get; set; }
@@ -27,7 +28,6 @@ public class NetworkPlayer : NetworkBehaviour, IPlayerLeft
             // Store local player as a reference
             Local = this;
 
-            Debug.Log("Spawned local player");
         }
         // If we don't have input authority it means that we are the REMOTE player
         else Debug.Log("Spawned remote player");
