@@ -15,22 +15,13 @@ public class CinemachineVirtualDynamic : MonoBehaviour
         // Get a reference of the virtual camera
         cinemachineVirtualCamera = GetComponent<CinemachineVirtualCamera>();
 
-        // Follow player   localplayer.transform
-        // cinemachineVirtualCamera.Follow =
-        // cinemachineVirtualCamera.LookAt
-
         StartCoroutine(CharacterSpawned());
     }
 
-    IEnumerator CharacterSpawned()
-    {
-        yield return new WaitForSeconds(2.5f);
-        Debug.Log(Spawner.isSpawned);
+    IEnumerator CharacterSpawned() {
+        yield return new WaitUntil(() => Spawner.isSpawned == true);
 
-        if(Spawner.isSpawned)
-        {
-            cinemachineVirtualCamera.Follow = NetworkPlayer.Local.transform;
-            cinemachineVirtualCamera.LookAt = NetworkPlayer.Local.transform;
-        }
+        cinemachineVirtualCamera.Follow = NetworkPlayer.Local.transform;
+        cinemachineVirtualCamera.LookAt = NetworkPlayer.Local.transform;
     }
 }
