@@ -119,9 +119,14 @@ public class NetworkCharacterControllerPrototype : NetworkTransform {
     IsGrounded = Controller.isGrounded;
   }
 
-    public void Rotate(float rotationY)
+    // public void Rotate(float rotationY)
+    // {
+    //     // transform.Rotate(0, rotationY * Runner.DeltaTime * rotationSpeed, 0);
+    //     transform.Rotate(0, rotationY * Runner.DeltaTime * rotationSpeed, 0);
+    // }
+
+    public void Rotate(float rotationX)
     {
-        // transform.Rotate(0, rotationY * Runner.DeltaTime * rotationSpeed, 0);
-        transform.Rotate(0, rotationY * Runner.DeltaTime * rotationSpeed, 0);
+      Controller.transform.Rotate(Vector3.up * rotationX * (600f * Time.deltaTime));
     }
 }

@@ -47,8 +47,11 @@ public class CharacterMovementHandler : NetworkBehaviour
         //Get the input from the network
             if(GetInput(out NetworkInputData networkInputData))
             {
+                networkCharacterControllerPrototype.Rotate(networkInputData.movementInput.x);
+
                 // networkCharacterControllerPrototype.Rotate(networkInputData.rotationInput);
                 if(networkInputData.movementInput != Vector2.zero && !Input.GetKey(KeyCode.LeftShift)) {
+                    // Walk
                     animator.SetFloat("Speed", 0.5f);
                     moveSpeed = walkSpeed;
                 } else if(networkInputData.movementInput != Vector2.zero && Input.GetKey(KeyCode.LeftShift)) {
@@ -61,27 +64,11 @@ public class CharacterMovementHandler : NetworkBehaviour
                     animator.SetFloat("Speed", 0);
                 }
 
-                //Move
-                // Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
-
                 Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
 
                 moveDirection.Normalize();
 
                 networkCharacterControllerPrototype.Move(moveDirection, moveSpeed);
-
-                // // This works but character floats above ground
-                // //  networkInputData.movementInput *= moveSpeed;
-                // // charController.Move(networkInputData.movementInput);
-                // if(charController.isGrounded)
-                // {
-                //     Debug.Log("Character is grounded!");
-                //     networkInputData.movementInput *= moveSpeed;
-                // }
-
-                // // Use this to ground the character
-
-                // charController.Move(networkInputData.movementInput * Time.deltaTime);
             }
     }
 }
