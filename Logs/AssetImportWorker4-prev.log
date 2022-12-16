@@ -1,0 +1,388 @@
+Unity Editor version:    2022.1.19f1 (2fd7b40534d1)
+Branch:                  2022.1/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.6 (Build 21G115)
+Darwin version:          21.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+/Users/hayenphan/schoolcode/MusicTerra
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+64580
+Successfully changed project path to: /Users/hayenphan/schoolcode/MusicTerra
+/Users/hayenphan/schoolcode/MusicTerra
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 243.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.19f1 (2fd7b40534d1)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/hayenphan/schoolcode/MusicTerra/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Color LCD preferred device: AMD Radeon Pro 5500M (high power)
+Metal devices available: 2
+0: AMD Radeon Pro 5500M (high power)
+1: Intel(R) UHD Graphics 630 (low power)
+Using device AMD Radeon Pro 5500M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5500M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56760
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.19f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002776 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 194.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.334 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1334ms)
+		BeginReloadAssembly (178ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (946ms)
+			LoadAssemblies (180ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+				TypeCache.Initialize (243ms)
+					TypeCache.ScanAssembly (242ms)
+				ResolveRequiredComponents (1ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (548ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (13ms)
+				RefreshPlugins (195ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (246ms)
+				ProcessInitializeOnLoadMethodAttributes (79ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.025361 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 196.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.770 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2771ms)
+		BeginReloadAssembly (220ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (2332ms)
+			LoadAssemblies (183ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (548ms)
+				TypeCache.Initialize (522ms)
+					TypeCache.ScanAssembly (517ms)
+				ResolveRequiredComponents (26ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (134ms)
+			SetupLoadedEditorAssemblies (1351ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (12ms)
+				RefreshPlugins (196ms)
+				BeforeProcessingInitializeOnLoad (150ms)
+				ProcessInitializeOnLoadAttributes (896ms)
+				ProcessInitializeOnLoadMethodAttributes (89ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.10 seconds
+Refreshing native plugins compatible for Editor in 3.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4379 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 78 unused Assets / (1.7 MB). Loaded Objects now: 4888.
+Memory consumption went from 0.89 GB to 0.89 GB.
+Total: 6.863065 ms (FindLiveObjects: 0.786566 ms CreateObjectMapping: 0.738992 ms MarkObjects: 4.654236 ms  DeleteObjects: 0.680946 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004223 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.873 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1874ms)
+		BeginReloadAssembly (239ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (105ms)
+		EndReloadAssembly (1484ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (521ms)
+				TypeCache.Initialize (492ms)
+					TypeCache.ScanAssembly (485ms)
+				ResolveRequiredComponents (29ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (685ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (9ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (531ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4169 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (1.7 MB). Loaded Objects now: 4904.
+Memory consumption went from 0.87 GB to 0.87 GB.
+Total: 6.706407 ms (FindLiveObjects: 0.433044 ms CreateObjectMapping: 0.460759 ms MarkObjects: 4.898305 ms  DeleteObjects: 0.913003 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8140.635041 seconds.
+  path: Assets/Textures/MusicRoom/Rock035_2K_Roughness.jpg
+  artifactKey: Guid(5a01c9d49502947359c712ddf4dbc0ed) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/Rock035_2K_Roughness.jpg using Guid(5a01c9d49502947359c712ddf4dbc0ed) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'aa82a3102230f052dbfc2bc525c52c7f') in 0.536278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Textures/MusicRoom/Tiles098_2K_Roughness.jpg
+  artifactKey: Guid(80ad2d0321a784ba18d8ffea13af1110) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/Tiles098_2K_Roughness.jpg using Guid(80ad2d0321a784ba18d8ffea13af1110) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'af45367a06d4e4140a53a27b97578291') in 0.021585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Scenes/MusicRoom/Lightmap-4_comp_light.exr
+  artifactKey: Guid(fc0400c297cd04227a8e0903382c5bae) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Scenes/MusicRoom/Lightmap-4_comp_light.exr using Guid(fc0400c297cd04227a8e0903382c5bae) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '1095f12f238b7af64ade34857f821fb8') in 0.182193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/European Wildflowers 1/Meshes/Campanula_glomerata_B.obj
+  artifactKey: Guid(f6cfc01f69670a040a44da6ca0a9a5db) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Meshes/Campanula_glomerata_B.obj using Guid(f6cfc01f69670a040a44da6ca0a9a5db) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '4041efa64725ce4df345799d37567c64') in 0.247884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Textures/Character/This is the real one HAIR-purple_DefaultMaterial_AlbedoTransparency.jpg
+  artifactKey: Guid(1627e39c72aba4772b169a0a6b24e3e8) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Character/This is the real one HAIR-purple_DefaultMaterial_AlbedoTransparency.jpg using Guid(1627e39c72aba4772b169a0a6b24e3e8) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '4dd350ee9cacfd63be096b2fec41ab3a') in 0.020631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Textures/Glasses/plywood_rough_2k.jpg
+  artifactKey: Guid(edc2cb373c93649c3a92f5167c044758) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Glasses/plywood_rough_2k.jpg using Guid(edc2cb373c93649c3a92f5167c044758) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '3911baad6fb51ff76a3ec5db29f2ce7b') in 0.023295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Almgp sci-fi interior_2/texture/Materials/Bark.mat
+  artifactKey: Guid(12e2f445df2f6453084c1afd2446d30b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/texture/Materials/Bark.mat using Guid(12e2f445df2f6453084c1afd2446d30b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '7c4edb22c8fec4ea85dc0c625783afbd') in 0.138470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Textures/Glasses/plywood_nor_2k.jpg
+  artifactKey: Guid(1afbf975c42304897850dd73a6a59f8e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Glasses/plywood_nor_2k.jpg using Guid(1afbf975c42304897850dd73a6a59f8e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'e08ee5be38fe5c9f7f3637e7603267a5') in 0.020383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Textures/MusicRoom/Rock035_2K_AmbientOcclusion.jpg
+  artifactKey: Guid(3d9a0a0cc8f8847dcbc8056e51b2b137) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/Rock035_2K_AmbientOcclusion.jpg using Guid(3d9a0a0cc8f8847dcbc8056e51b2b137) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '1d67584f34299410f4afbd9050c9f673') in 0.028676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/TheGuitarGirl (hair fixed4.fbx
+  artifactKey: Guid(3d21f71602a7941fea5e289dc24447c1) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/TheGuitarGirl (hair fixed4.fbx using Guid(3d21f71602a7941fea5e289dc24447c1) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '54d935941dc1c8f0114c7c2a2970dbd1') in 0.179991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Almgp sci-fi interior_2/prefabs/Room2/Plane003.002.prefab
+  artifactKey: Guid(f7535ca9d70ce6047bf2b9cc9ebe5b41) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/prefabs/Room2/Plane003.002.prefab using Guid(f7535ca9d70ce6047bf2b9cc9ebe5b41) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '076c7907a6feb17ec54da5cc5ef1d6e9') in 0.145617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Photon/FusionCodeGen/Fusion.CodeGen.User.cs
+  artifactKey: Guid(5f9faa3ffc014c941995a81138385040) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Photon/FusionCodeGen/Fusion.CodeGen.User.cs using Guid(5f9faa3ffc014c941995a81138385040) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'c28d6dadcdcafa1c8943a747479d1d69') in 0.134769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Almgp sci-fi interior_2/prefabs/Room2/Plane002.001.prefab
+  artifactKey: Guid(2c5fd3bcb592e1e4abaf4e590613c60a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/prefabs/Room2/Plane002.001.prefab using Guid(2c5fd3bcb592e1e4abaf4e590613c60a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'a3fd409d3988d4195763bf586f6ef305') in 0.014765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Scenes/Music Terra new_Profiles/PostProcess  Profile.asset
+  artifactKey: Guid(6614570e0abd84b468715128f0a21c4a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Scenes/Music Terra new_Profiles/PostProcess  Profile.asset using Guid(6614570e0abd84b468715128f0a21c4a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '5ac4a3aab9c904959be86bafabc5d2ad') in 0.117508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Prefabs/pfb_Music_Microphone_Stand.prefab
+  artifactKey: Guid(e68b169021999a741ab423261db33a85) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Prefabs/pfb_Music_Microphone_Stand.prefab using Guid(e68b169021999a741ab423261db33a85) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '6689a57c5182d14bedaaea9cb85a3cca') in 0.024265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Almgp sci-fi interior_2/texture/Materials/Gloss.mat
+  artifactKey: Guid(95beb75759ff84d5da15806987ba86fc) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/texture/Materials/Gloss.mat using Guid(95beb75759ff84d5da15806987ba86fc) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'e6f8f9cf43e3db0a680965bd483275d6') in 0.008775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Textures/SaxNeon_DF.tga
+  artifactKey: Guid(5235d7b7b5f43d44a8537c4ffea51258) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Textures/SaxNeon_DF.tga using Guid(5235d7b7b5f43d44a8537c4ffea51258) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'b9183d3ca0a714b712b67bd627972802') in 0.124498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/Textures/MusicRoom/PavingStones119_2K_AmbientOcclusion.jpg
+  artifactKey: Guid(dc839222c9ce1458eb3821a54ce10c7f) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/PavingStones119_2K_AmbientOcclusion.jpg using Guid(dc839222c9ce1458eb3821a54ce10c7f) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '2c8fcc030863ab0ee03ef6de80ce0a77') in 0.025830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Textures/Character/DefaultMaterial_AlbedoBoots leather part.png
+  artifactKey: Guid(8e26c45877fc84df7af2a912df849c1d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Character/DefaultMaterial_AlbedoBoots leather part.png using Guid(8e26c45877fc84df7af2a912df849c1d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'ff4748f3eb791749da5a8845c0c5f241') in 0.153405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Textures/MusicRoom/PaintedPlaster014_2K_Color.jpg
+  artifactKey: Guid(a1fc0599fcbd14c088dab193dc0f827a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/PaintedPlaster014_2K_Color.jpg using Guid(a1fc0599fcbd14c088dab193dc0f827a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'bf324f4f11e0ff70a1e469dedef968c3') in 0.018019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Textures/MusicRoom/Tiles098_2K_NormalGL.jpg
+  artifactKey: Guid(f4c8536f657714bd9a568941d69e0d11) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/Tiles098_2K_NormalGL.jpg using Guid(f4c8536f657714bd9a568941d69e0d11) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '1e0458810883ac620219577beea9fbfd') in 0.019279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Textures/MusicRoom/Metal044B_2K_Roughness.jpg
+  artifactKey: Guid(d4b2610c8978841e6b0a14012fd9def1) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/Metal044B_2K_Roughness.jpg using Guid(d4b2610c8978841e6b0a14012fd9def1) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '64aa57f21a21df3e6296e9aac1bc78ca') in 0.023992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Textures/Character/This is the real one HAIR_DefaultMaterial_MetallicSmoothness.png
+  artifactKey: Guid(c1396ec7e18e64cea815245ec1b5b770) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Character/This is the real one HAIR_DefaultMaterial_MetallicSmoothness.png using Guid(c1396ec7e18e64cea815245ec1b5b770) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '63903355b360fdf2668fd956215d13c8') in 0.021947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Textures/Character/DefaultMaterial_HeightBoots leather part.png
+  artifactKey: Guid(a31aa59d654cc4f0a9b4dc3d1a770fcb) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Character/DefaultMaterial_HeightBoots leather part.png using Guid(a31aa59d654cc4f0a9b4dc3d1a770fcb) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'c92782511570afb1d0d6d9f4c058943e') in 0.019793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Almgp sci-fi interior_2/texture/Materials/galaxy 1.mat
+  artifactKey: Guid(c3af01c02f7dd4bccb1d1b26f6fea087) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/texture/Materials/galaxy 1.mat using Guid(c3af01c02f7dd4bccb1d1b26f6fea087) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '9ee66a05301642b7e456c66327c0a5fb') in 0.014613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_18.prefab
+  artifactKey: Guid(0dbea3c1e909c0c4fbcf5ad9a30ddf35) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_18.prefab using Guid(0dbea3c1e909c0c4fbcf5ad9a30ddf35) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe) Editor requested this worker to shutdown with reason: Scaling down because of idle timeout

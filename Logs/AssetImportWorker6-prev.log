@@ -16,13 +16,13 @@ COMMAND LINE ARGUMENTS:
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker6
 -projectPath
 /Users/hayenphan/schoolcode/MusicTerra
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker6.log
 -srvPort
-62709
+64580
 Successfully changed project path to: /Users/hayenphan/schoolcode/MusicTerra
 /Users/hayenphan/schoolcode/MusicTerra
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -54,7 +54,7 @@ Successfully changed project path to: /Users/hayenphan/schoolcode/MusicTerra
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 142.19 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 308.15 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.1.19f1 (2fd7b40534d1)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -70,42 +70,42 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56869
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56769
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.1.19f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001124 seconds.
+Registered in 0.001103 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 123.36 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 140.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.946 seconds
+- Completed reload, in  1.111 seconds
 Domain Reload Profiling:
-	ReloadAssembly (947ms)
-		BeginReloadAssembly (78ms)
+	ReloadAssembly (1111ms)
+		BeginReloadAssembly (124ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (713ms)
-			LoadAssemblies (77ms)
+		EndReloadAssembly (788ms)
+			LoadAssemblies (123ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (193ms)
-				TypeCache.Initialize (193ms)
-					TypeCache.ScanAssembly (191ms)
+			SetupTypeCache (241ms)
+				TypeCache.Initialize (240ms)
+					TypeCache.ScanAssembly (239ms)
 				ResolveRequiredComponents (1ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (403ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (416ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (9ms)
-				RefreshPlugins (129ms)
+				SetLoadedEditorAssemblies (11ms)
+				RefreshPlugins (140ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadAttributes (190ms)
 				ProcessInitializeOnLoadMethodAttributes (62ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -113,54 +113,54 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003454 seconds.
+Registered in 0.005021 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 142.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 174.26 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.910 seconds
+- Completed reload, in  2.340 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1911ms)
-		BeginReloadAssembly (140ms)
+	ReloadAssembly (2341ms)
+		BeginReloadAssembly (195ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (1605ms)
-			LoadAssemblies (85ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1916ms)
+			LoadAssemblies (120ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (416ms)
-				TypeCache.Initialize (393ms)
-					TypeCache.ScanAssembly (389ms)
-				ResolveRequiredComponents (23ms)
+			SetupTypeCache (513ms)
+				TypeCache.Initialize (488ms)
+					TypeCache.ScanAssembly (482ms)
+				ResolveRequiredComponents (25ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (100ms)
-			SetupLoadedEditorAssemblies (920ms)
+			RebuildScriptCaches (121ms)
+			SetupLoadedEditorAssemblies (1075ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (9ms)
-				RefreshPlugins (143ms)
-				BeforeProcessingInitializeOnLoad (113ms)
-				ProcessInitializeOnLoadAttributes (594ms)
-				ProcessInitializeOnLoadMethodAttributes (55ms)
+				SetLoadedEditorAssemblies (10ms)
+				RefreshPlugins (174ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (696ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4379 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 78 unused Assets / (1.7 MB). Loaded Objects now: 4888.
 Memory consumption went from 0.89 GB to 0.89 GB.
-Total: 5.226177 ms (FindLiveObjects: 0.426151 ms CreateObjectMapping: 0.516788 ms MarkObjects: 3.707983 ms  DeleteObjects: 0.574305 ms)
+Total: 7.095940 ms (FindLiveObjects: 0.544424 ms CreateObjectMapping: 0.696746 ms MarkObjects: 5.184254 ms  DeleteObjects: 0.668886 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -172,89 +172,53 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 8599.946263 seconds.
-  path: Assets/Short hair idle (shoes fixed) 1.fbx
-  artifactKey: Guid(67b5f69ad5c0c4376bc25e0ca3ed9068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Short hair idle (shoes fixed) 1.fbx using Guid(67b5f69ad5c0c4376bc25e0ca3ed9068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9f08106e58d6f570f3fc4c3185e187a') in 0.532123 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 55.964267 seconds.
-  path: Assets/Cyberpunk Downtown Vol.1/Poster/3840x1080/Original/統治と権力のための協議_01_Original.png
-  artifactKey: Guid(71548d537186f2e4ea984a9c29e315ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cyberpunk Downtown Vol.1/Poster/3840x1080/Original/統治と権力のための協議_01_Original.png using Guid(71548d537186f2e4ea984a9c29e315ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2481d388ecca824756e17ecc024ed93f') in 0.151326 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000086 seconds.
-  path: Assets/Cyberpunk Downtown Vol.1/Poster/1080x3840/Original/診断誤診率 0.00001％_02_Original.png
-  artifactKey: Guid(359db22f8fcf5f84f8e8660d1ca28a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cyberpunk Downtown Vol.1/Poster/1080x3840/Original/診断誤診率 0.00001％_02_Original.png using Guid(359db22f8fcf5f84f8e8660d1ca28a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b88c564271960df4e1ece2bf6eb5f7cf') in 0.014253 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/Cyberpunk Downtown Vol.1/Poster/1080x3840/Original/診断誤診率 0.00001％_01_Original.png
-  artifactKey: Guid(8d03cc273e272834d8b530af225009f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cyberpunk Downtown Vol.1/Poster/1080x3840/Original/診断誤診率 0.00001％_01_Original.png using Guid(8d03cc273e272834d8b530af225009f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb56b619cec346043ab75f155e9ca262') in 0.016870 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000119 seconds.
-  path: Assets/Cyberpunk Downtown Vol.1/Poster/1080x3840/Original/脳波調整_02_Original.png
-  artifactKey: Guid(209861ff90e0558408fe544aa1cf7828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cyberpunk Downtown Vol.1/Poster/1080x3840/Original/脳波調整_02_Original.png using Guid(209861ff90e0558408fe544aa1cf7828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bb1f8080c240ece1047eaf3d01350c1') in 0.013170 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.162386 seconds.
-  path: Assets/Scenes/Music Terra new/ReflectionProbe-0.exr
-  artifactKey: Guid(d284fd8cfdd7b4e73a6395e8da9b6536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Music Terra new/ReflectionProbe-0.exr using Guid(d284fd8cfdd7b4e73a6395e8da9b6536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de0693a068958ba5e42ce9ab3a495cdd') in 0.135925 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003474 seconds.
+Registered in 0.005213 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.37 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.64 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.529 seconds
+- Completed reload, in  1.862 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1530ms)
-		BeginReloadAssembly (182ms)
+	ReloadAssembly (1863ms)
+		BeginReloadAssembly (240ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (79ms)
-		EndReloadAssembly (1227ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (105ms)
+		EndReloadAssembly (1472ms)
+			LoadAssemblies (108ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (362ms)
-				TypeCache.Initialize (341ms)
-					TypeCache.ScanAssembly (337ms)
-				ResolveRequiredComponents (20ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (631ms)
+			SetupTypeCache (524ms)
+				TypeCache.Initialize (499ms)
+					TypeCache.ScanAssembly (493ms)
+				ResolveRequiredComponents (25ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (669ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (10ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (479ms)
-				ProcessInitializeOnLoadMethodAttributes (57ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (9ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (515ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.93 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.88 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4169 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 59 unused Assets / (1.7 MB). Loaded Objects now: 4985.
-Memory consumption went from 0.90 GB to 0.90 GB.
-Total: 6.107135 ms (FindLiveObjects: 0.416358 ms CreateObjectMapping: 0.441420 ms MarkObjects: 4.562778 ms  DeleteObjects: 0.685225 ms)
+Unloading 59 unused Assets / (1.7 MB). Loaded Objects now: 4904.
+Memory consumption went from 0.87 GB to 0.87 GB.
+Total: 7.164629 ms (FindLiveObjects: 0.501501 ms CreateObjectMapping: 0.577058 ms MarkObjects: 5.296948 ms  DeleteObjects: 0.787750 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -266,6 +230,59 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8140.607841 seconds.
+  path: Assets/Textures/MusicRoom/PavingStones119_2K_Roughness.jpg
+  artifactKey: Guid(ae206f82157f14a289d3ea5eb129cb7d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/PavingStones119_2K_Roughness.jpg using Guid(ae206f82157f14a289d3ea5eb129cb7d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'ec95654707c5a4dd20997c85fdc9a91b') in 0.563516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Textures/MusicRoom/Tiles098_2K_Color.jpg
+  artifactKey: Guid(7f617166a8cfb42fab420c9404e41cc6) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/Tiles098_2K_Color.jpg using Guid(7f617166a8cfb42fab420c9404e41cc6) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'b638746a1d7d7e2433e9cf40a9c1d6da') in 0.023158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Textures/Glasses/Metal012_4K_Color.jpg
+  artifactKey: Guid(02a2383af3da9415c9ff42dceb89018e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Glasses/Metal012_4K_Color.jpg using Guid(02a2383af3da9415c9ff42dceb89018e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'c7e69c2f44dd81ab317d2ce04f8abbaf') in 0.029899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Scenes/MusicRoom/Lightmap-2_comp_dir.png
+  artifactKey: Guid(9b32d6e0eb7c043fc86817b18d15aa22) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Scenes/MusicRoom/Lightmap-2_comp_dir.png using Guid(9b32d6e0eb7c043fc86817b18d15aa22) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'd36c9ce7b9ab0d2cad96b398d728f4c1') in 0.172179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Almgp sci-fi interior_2/texture/Materials/Leaf.mat
+  artifactKey: Guid(b628bb6a2f32049f58428009ff0a2664) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/texture/Materials/Leaf.mat using Guid(b628bb6a2f32049f58428009ff0a2664) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'c1d476386c5de6d3b898cd2abf5b820e') in 0.187957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Textures/Marcus Textures/outfit-bodysuit-01-v2-m-top-M-outfit-bodysuit-01-v2-m-top-R@.png
+  artifactKey: Guid(792296f08dd0246508b9d04e2b9588aa) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Marcus Textures/outfit-bodysuit-01-v2-m-top-M-outfit-bodysuit-01-v2-m-top-R@.png using Guid(792296f08dd0246508b9d04e2b9588aa) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '2d818a5369682c3e1ab09adc383bfa8f') in 0.021739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Textures/MusicRoom/PavingStones119_2K_Color.jpg
+  artifactKey: Guid(a1f44a8a686bb447ea41eeb072ce9309) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/PavingStones119_2K_Color.jpg using Guid(a1f44a8a686bb447ea41eeb072ce9309) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'aa35447c1abfd561528a7693ebee5af1') in 0.021315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown.unity
+  artifactKey: Guid(597a6db09c918af418713ad79eb38b9e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown.unity using Guid(597a6db09c918af418713ad79eb38b9e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe) Opening scene 'Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown.unity additively'
+LightingSettings: switching bake backend from 1 to 2.
+Loaded scene 'Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown.unity'
+	Deserialize:            1077.595 ms
+	Integration:            20650.779 ms
+	Integration of assets:  4.430 ms
+	Thread Wait Time:       -1.502 ms
+	Total Operation Time:   21731.303 ms
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting

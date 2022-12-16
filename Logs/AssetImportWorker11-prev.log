@@ -1,0 +1,272 @@
+Unity Editor version:    2022.1.19f1 (2fd7b40534d1)
+Branch:                  2022.1/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.6 (Build 21G115)
+Darwin version:          21.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker11
+-projectPath
+/Users/hayenphan/schoolcode/MusicTerra
+-logFile
+Logs/AssetImportWorker11.log
+-srvPort
+64580
+Successfully changed project path to: /Users/hayenphan/schoolcode/MusicTerra
+/Users/hayenphan/schoolcode/MusicTerra
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 384.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.19f1 (2fd7b40534d1)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/hayenphan/schoolcode/MusicTerra/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Color LCD preferred device: AMD Radeon Pro 5500M (high power)
+Metal devices available: 2
+0: AMD Radeon Pro 5500M (high power)
+1: Intel(R) UHD Graphics 630 (low power)
+Using device AMD Radeon Pro 5500M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5500M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56809
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.19f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002840 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 305.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.212 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2214ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1654ms)
+			LoadAssemblies (179ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (447ms)
+				TypeCache.Initialize (446ms)
+					TypeCache.ScanAssembly (443ms)
+				ResolveRequiredComponents (1ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (106ms)
+			SetupLoadedEditorAssemblies (933ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (21ms)
+				RefreshPlugins (306ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (432ms)
+				ProcessInitializeOnLoadMethodAttributes (150ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.012428 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 352.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.697 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4700ms)
+		BeginReloadAssembly (350ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (19ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (87ms)
+		EndReloadAssembly (3854ms)
+			LoadAssemblies (215ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1064ms)
+				TypeCache.Initialize (1009ms)
+					TypeCache.ScanAssembly (1000ms)
+				ResolveRequiredComponents (55ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (258ms)
+			SetupLoadedEditorAssemblies (2119ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (18ms)
+				RefreshPlugins (352ms)
+				BeforeProcessingInitializeOnLoad (237ms)
+				ProcessInitializeOnLoadAttributes (1367ms)
+				ProcessInitializeOnLoadMethodAttributes (131ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.16 seconds
+Refreshing native plugins compatible for Editor in 2.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4379 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 78 unused Assets / (1.7 MB). Loaded Objects now: 4888.
+Memory consumption went from 0.89 GB to 0.89 GB.
+Total: 12.231558 ms (FindLiveObjects: 0.748446 ms CreateObjectMapping: 1.339928 ms MarkObjects: 8.929138 ms  DeleteObjects: 1.211466 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8278.780446 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Interior/Floor_02_A_Interior.prefab
+  artifactKey: Guid(742a2bfa1e455344eb1350b54c6abfe2) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Interior/Floor_02_A_Interior.prefab using Guid(742a2bfa1e455344eb1350b54c6abfe2) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'e748b2141f961b3021fe04bb44d79649') in 0.801578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_06_Fake Interior_A_Corner.prefab
+  artifactKey: Guid(68334a81e60a5514ca9263c08b59b618) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_06_Fake Interior_A_Corner.prefab using Guid(68334a81e60a5514ca9263c08b59b618) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '875ef2d50683c163130269797b45bea6') in 2.202503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Characters/Marcus Character/Texturing/Wolf3D_Teeth.mat
+  artifactKey: Guid(1b696961802834dc6a83a2b2e1da1634) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Characters/Marcus Character/Texturing/Wolf3D_Teeth.mat using Guid(1b696961802834dc6a83a2b2e1da1634) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'adf3df8271cae803ff3ec28808474093') in 0.229410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Characters/Marcus Character/Texturing/Wolf3D_Hair.mat
+  artifactKey: Guid(b994d6f9bfd754a25ac911290e3c5a6d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Characters/Marcus Character/Texturing/Wolf3D_Hair.mat using Guid(b994d6f9bfd754a25ac911290e3c5a6d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'd639099dea5a8b4fe33631ec4a538cd2') in 0.021990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_11.prefab
+  artifactKey: Guid(9da32b32113b6e7489f1fbaf1824d3bd) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_11.prefab using Guid(9da32b32113b6e7489f1fbaf1824d3bd) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '75455f33c2b5779651c10d4a8e12fda4') in 15.797659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_01.prefab
+  artifactKey: Guid(fdfdc4b68813b7043ab12145b3aabe85) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_01.prefab using Guid(fdfdc4b68813b7043ab12145b3aabe85) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '1dcfff450ce744d2e02e01b2845ccff0') in 0.037646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_01.prefab
+  artifactKey: Guid(bb7a0151a113a934aabeab500b9f40e1) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_01.prefab using Guid(bb7a0151a113a934aabeab500b9f40e1) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'be1561a2c83ce7d38688d015491c8dad') in 11.162919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_08.prefab
+  artifactKey: Guid(0cfb906b910e44f41900069ca875d77c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_08.prefab using Guid(0cfb906b910e44f41900069ca875d77c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '7c8174d8c7f51c9a6248c879dbbae5b3') in 0.034214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_07_A_Fake Interior.prefab
+  artifactKey: Guid(230830e5df3036742be5110226bd78ab) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_07_A_Fake Interior.prefab using Guid(230830e5df3036742be5110226bd78ab) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '3b3885095c3d5c797e46152fded9e091') in 2.930037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_10.prefab
+  artifactKey: Guid(87f8a0a12db400846b19754e3475371f) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_10.prefab using Guid(87f8a0a12db400846b19754e3475371f) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'b4fe5a505ce9cbc4e24b05e3f6bb0031') in 0.036825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_09.prefab
+  artifactKey: Guid(2bc3dbf4a84735e41be9045c65d8ce1b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_09.prefab using Guid(2bc3dbf4a84735e41be9045c65d8ce1b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '1be0fffeb9b38bc17e8acd04e54af15a') in 0.145340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_06_Fake Interior_A.prefab
+  artifactKey: Guid(c761dac6f64fc9e42989caa12ebb2ee5) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_06_Fake Interior_A.prefab using Guid(c761dac6f64fc9e42989caa12ebb2ee5) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '472d1d35e8ffe352afe2d0c5e5c2c220') in 1.923466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Newsstand_01.prefab
+  artifactKey: Guid(0fcab5092b624fc42b70d95fae6bd9f0) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Newsstand_01.prefab using Guid(0fcab5092b624fc42b70d95fae6bd9f0) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '4ff6811dfe2ee0db7e449e94574877b3') in 0.132144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Interior/Floor_01_D_Interior.prefab
+  artifactKey: Guid(9ef991740928b0b429a10b5ef5311d50) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Interior/Floor_01_D_Interior.prefab using Guid(9ef991740928b0b429a10b5ef5311d50) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '50b36a7e361a12e4da8d24077e781dd7') in 0.036859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown.unity
+  artifactKey: Guid(597a6db09c918af418713ad79eb38b9e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown.unity using Guid(597a6db09c918af418713ad79eb38b9e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe) Opening scene 'Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown.unity additively'
+LightingSettings: switching bake backend from 1 to 2.
+Loaded scene 'Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown.unity'
+	Deserialize:            2049.665 ms
+	Integration:            32319.150 ms
+	Integration of assets:  11.242 ms
+	Thread Wait Time:       -3.746 ms
+	Total Operation Time:   34376.312 ms
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

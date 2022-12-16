@@ -1,0 +1,1082 @@
+Unity Editor version:    2022.1.19f1 (2fd7b40534d1)
+Branch:                  2022.1/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.6 (Build 21G115)
+Darwin version:          21.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+/Users/hayenphan/schoolcode/MusicTerra
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+64580
+Successfully changed project path to: /Users/hayenphan/schoolcode/MusicTerra
+/Users/hayenphan/schoolcode/MusicTerra
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 172.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.19f1 (2fd7b40534d1)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/hayenphan/schoolcode/MusicTerra/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Color LCD preferred device: AMD Radeon Pro 5500M (high power)
+Metal devices available: 2
+0: AMD Radeon Pro 5500M (high power)
+1: Intel(R) UHD Graphics 630 (low power)
+Using device AMD Radeon Pro 5500M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5500M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.19f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002987 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 106.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.900 seconds
+Domain Reload Profiling:
+	ReloadAssembly (900ms)
+		BeginReloadAssembly (155ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (592ms)
+			LoadAssemblies (156ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (161ms)
+				TypeCache.Initialize (160ms)
+					TypeCache.ScanAssembly (159ms)
+				ResolveRequiredComponents (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (337ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (106ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (163ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003909 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 143.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.941 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1941ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1592ms)
+			LoadAssemblies (148ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (402ms)
+				TypeCache.Initialize (383ms)
+					TypeCache.ScanAssembly (380ms)
+				ResolveRequiredComponents (19ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (896ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (9ms)
+				RefreshPlugins (143ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (583ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2022.1.19f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4379 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 78 unused Assets / (1.7 MB). Loaded Objects now: 4888.
+Memory consumption went from 0.89 GB to 0.89 GB.
+Total: 6.660678 ms (FindLiveObjects: 0.922001 ms CreateObjectMapping: 0.997241 ms MarkObjects: 4.148013 ms  DeleteObjects: 0.592599 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7926.251821 seconds.
+  path: Assets/Player.prefab
+  artifactKey: Guid(7033ff7ff846445ff94163ddab1f60be) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Player.prefab using Guid(7033ff7ff846445ff94163ddab1f60be) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '164b98f19d869b4504404f996a63422c') in 2.956730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Characters/Player 2.prefab
+  artifactKey: Guid(f25e0f78c83734701973473807ed8586) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Characters/Player 2.prefab using Guid(f25e0f78c83734701973473807ed8586) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '3a281378abc5f04a85b382c10ef1461d') in 0.134859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Material_A.mat
+  artifactKey: Guid(a7c00f25378363f46b7cdf2f0b334d0d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Material_A.mat using Guid(a7c00f25378363f46b7cdf2f0b334d0d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '9bd86e4a15b6d8b31831b182d7243df7') in 0.116423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Textures/castle_brick_02_white_rough_2k_Detailed.jpg
+  artifactKey: Guid(c8a7a5591bbb74a5b99fbb83d45a340c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/castle_brick_02_white_rough_2k_Detailed.jpg using Guid(c8a7a5591bbb74a5b99fbb83d45a340c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'e0e9fbaac8488ef26e49339e541e84ae') in 0.373368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Textures/white_plaster_02_rough_2k.jpg
+  artifactKey: Guid(46ac075fb35b0436cb683f985c4ef746) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/white_plaster_02_rough_2k.jpg using Guid(46ac075fb35b0436cb683f985c4ef746) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '74da49922fe3cc0c5f22a6fa35087090') in 0.020057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Emission_Orange.mat
+  artifactKey: Guid(cb4e255f2a19aef44b605e1dfd4a8176) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Emission_Orange.mat using Guid(cb4e255f2a19aef44b605e1dfd4a8176) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '8ca6ee76ef192d625aba132250e88cb2') in 0.007499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Emission_Red_None GI.mat
+  artifactKey: Guid(486d330cded2b7b47a17fa0457eeeebf) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Emission_Red_None GI.mat using Guid(486d330cded2b7b47a17fa0457eeeebf) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '7ef2617c283fd69b934ed89ba15cd63d') in 0.009720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Colour_Brown.mat
+  artifactKey: Guid(a6c8faae662ad33478aa62dac3019c66) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Colour_Brown.mat using Guid(a6c8faae662ad33478aa62dac3019c66) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '51d53ed1e4d070247c499022073dac81') in 0.009824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Almgp sci-fi interior_2/Materials/Allum.mat
+  artifactKey: Guid(4c703b0278858ca49b866c207e7453ec) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/Materials/Allum.mat using Guid(4c703b0278858ca49b866c207e7453ec) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'e87545ee5a327bdb0c61a33072ccb952') in 0.010314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Characters/Animations/X Bot@Running.fbx
+  artifactKey: Guid(b01c5780e5d674927a95612c0124f73a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Characters/Animations/X Bot@Running.fbx using Guid(b01c5780e5d674927a95612c0124f73a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'ab0c46365902ca9d2063c3664baf446f') in 0.134377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Alpha_01.mat
+  artifactKey: Guid(4f6e2a18ac5eb834db068fa966466422) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Alpha_01.mat using Guid(4f6e2a18ac5eb834db068fa966466422) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '6bf9395a64589be8ea18f1aeb2ce44ef') in 0.015425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Textures/Scifi_Panels_02_normal.jpg
+  artifactKey: Guid(4d9c309423b72460ca26172cd03dd5af) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Scifi_Panels_02_normal.jpg using Guid(4d9c309423b72460ca26172cd03dd5af) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '263f8bf0e63e5d697eeda16909e6ea6f') in 0.024273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Almgp sci-fi interior_2/Materials/Plastic_b 1.mat
+  artifactKey: Guid(0c04e64da02f3384880014a028b362c9) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/Materials/Plastic_b 1.mat using Guid(0c04e64da02f3384880014a028b362c9) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '800210643ee9029e6b68617339b063e8') in 0.008993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Characters/Marcus Character/marcus2077.fbx
+  artifactKey: Guid(5bd9e757a5a9e4413879e2ed238a9906) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Characters/Marcus Character/marcus2077.fbx using Guid(5bd9e757a5a9e4413879e2ed238a9906) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'e87635289da43d154a6965e91f0126a7') in 0.079564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Textures/concrete_floor_worn_001_diff_2k.jpg
+  artifactKey: Guid(5969979f5eb3648a4bce6ebd1ab4aef3) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/concrete_floor_worn_001_diff_2k.jpg using Guid(5969979f5eb3648a4bce6ebd1ab4aef3) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '6dcf43f36fa596babe102407f13e0db4') in 0.018718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Almgp sci-fi interior_2/prefabs/Yasmin Variant.prefab
+  artifactKey: Guid(115129fd91ad6433288579f95d13e352) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/prefabs/Yasmin Variant.prefab using Guid(115129fd91ad6433288579f95d13e352) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'c480f862758f4fbafdac5a71462c4fa7') in 0.192094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Characters/Player.prefab
+  artifactKey: Guid(038e90f187fa947e48196a5d9fada4b4) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Characters/Player.prefab using Guid(038e90f187fa947e48196a5d9fada4b4) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'a84ea4940bb8aaa6e9ee4c9afff71164') in 0.199748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Shaders/Flower shader.shadergraph
+  artifactKey: Guid(c38bdbffa17d848feaf73fe8c626a4f8) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Shaders/Flower shader.shadergraph using Guid(c38bdbffa17d848feaf73fe8c626a4f8) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'a90022af1df5b9f46d44024449550aca') in 0.123339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Almgp sci-fi interior_2/Materials/galaxy.mat
+  artifactKey: Guid(52aa427035ba1ab49a48f4b5d035789d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/Materials/galaxy.mat using Guid(52aa427035ba1ab49a48f4b5d035789d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '79c7457d525372d4160227a1e633cc25') in 0.011303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Almgp sci-fi interior_2/Materials/Plastic_b.mat
+  artifactKey: Guid(b5741c53763d01f47b532629015b20b6) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/Materials/Plastic_b.mat using Guid(b5741c53763d01f47b532629015b20b6) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '5fa91ff823991b682cdb6a01b94a436a') in 0.006886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Settings/Medium_PipelineAsset_ForwardRenderer.asset
+  artifactKey: Guid(358ea618709164bc4acd3892eadfb1d0) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Settings/Medium_PipelineAsset_ForwardRenderer.asset using Guid(358ea618709164bc4acd3892eadfb1d0) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'c5b97dcf733c48d735f1e55ab1195e71') in 0.159265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Material_A_Glass_Emission_Light.mat
+  artifactKey: Guid(572fbb6b6d8ad6c44aba28aeeb5b7313) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Material_A_Glass_Emission_Light.mat using Guid(572fbb6b6d8ad6c44aba28aeeb5b7313) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '2d75297b4ebf6de78fb7a186336abb45') in 0.020723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/GrassAssets/Green_Grass_MAODS.tga
+  artifactKey: Guid(fa45c614f378f074a8fb3b4b280c4942) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/GrassAssets/Green_Grass_MAODS.tga using Guid(fa45c614f378f074a8fb3b4b280c4942) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'f291997ea9151087557b34a78a4296d4') in 0.148020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Emission_Purple.mat
+  artifactKey: Guid(66eb1cd86df7c354f9d16a8f1daa7af4) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Emission_Purple.mat using Guid(66eb1cd86df7c354f9d16a8f1daa7af4) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'ab91c42ea0bc1070fd7fa4843a26e6fe') in 0.006956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Textures/Scifi_Panels_02_height.jpg
+  artifactKey: Guid(0eb78f592902147d2a923baca1dd7063) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Scifi_Panels_02_height.jpg using Guid(0eb78f592902147d2a923baca1dd7063) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '0aae09325c6a29fad79d5034f2482f3f') in 0.017295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Materials/Metal027_2K_Color.jpg
+  artifactKey: Guid(781f25e130e8b44dabbe1d744ac92128) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Materials/Metal027_2K_Color.jpg using Guid(781f25e130e8b44dabbe1d744ac92128) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'f399b19d3e1260b796774bd2a68f7176') in 0.020776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Settings/Low_PipelineAsset.asset
+  artifactKey: Guid(02d1c47e7fbed4bcfbfa1fe0417ffaa2) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Settings/Low_PipelineAsset.asset using Guid(02d1c47e7fbed4bcfbfa1fe0417ffaa2) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '7faa4357b1ce999681679d8999e44e46') in 0.029609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Settings/High_PipelineAsset.asset
+  artifactKey: Guid(a4550d5b62a8e4c6f95bd5deba0d34ba) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Settings/High_PipelineAsset.asset using Guid(a4550d5b62a8e4c6f95bd5deba0d34ba) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '12094a4b6fde7c66a571fa4663cb92b8') in 0.017722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Textures/Scifi_Panels_02_roughness.jpg
+  artifactKey: Guid(62a69e26ef9284e608b33a5d7b90dead) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Scifi_Panels_02_roughness.jpg using Guid(62a69e26ef9284e608b33a5d7b90dead) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '675e368d01896ba835a4f73de146766f') in 0.042824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/ThePianoGirl.fbx
+  artifactKey: Guid(c302cbcab09944256ad5e8f67b407568) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/ThePianoGirl.fbx using Guid(c302cbcab09944256ad5e8f67b407568) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '31392a06a1727a8e158cfbf80985bcc3') in 0.083155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Settings/Low_PipelineAsset_ForwardRenderer.asset
+  artifactKey: Guid(bbd026def4ab14780a5c3d5cc311dd3b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Settings/Low_PipelineAsset_ForwardRenderer.asset using Guid(bbd026def4ab14780a5c3d5cc311dd3b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'b6657dbb3973da8e103126f0c79767cd') in 0.021802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Textures/Bricks060_2K_Color.jpg
+  artifactKey: Guid(9b0e0a91a1bad40dd88912ad98419c47) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Bricks060_2K_Color.jpg using Guid(9b0e0a91a1bad40dd88912ad98419c47) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '3364149b2878a8f644ddd4b07fe93c09') in 0.018669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Textures/pockedconcrete1-normal.png
+  artifactKey: Guid(98398479aed0149f69246f2d4a9b29e2) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/pockedconcrete1-normal.png using Guid(98398479aed0149f69246f2d4a9b29e2) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '284eb51551300ba49dcb79675f1da07d') in 0.193624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Settings/Very High_PipelineAsset_ForwardRenderer.asset
+  artifactKey: Guid(3afc821986c7244b3b95ff47ef87c6dc) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Settings/Very High_PipelineAsset_ForwardRenderer.asset using Guid(3afc821986c7244b3b95ff47ef87c6dc) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '9ae423151047b174d274b5fc23646a58') in 0.023545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Bar Cybperunk/БУТЫЛКИ СТОЛИК Variant.prefab
+  artifactKey: Guid(5ff444fad1f9441bd9f8c1fe30b09b15) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Bar Cybperunk/БУТЫЛКИ СТОЛИК Variant.prefab using Guid(5ff444fad1f9441bd9f8c1fe30b09b15) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '524952386312f3fa685b823670172b76') in 0.111941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Materials/castle_brick_02_white_nor_gl_2k.mat
+  artifactKey: Guid(c48e4abf2c2064a1baa8acbf3da22999) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Materials/castle_brick_02_white_nor_gl_2k.mat using Guid(c48e4abf2c2064a1baa8acbf3da22999) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '54a77eda0b5bb4e615b829a86ca61cbd') in 0.032061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Almgp sci-fi interior_2/Materials/Bark.mat
+  artifactKey: Guid(6e1691ab0ec97de4eacf796e7df5dbb9) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/Materials/Bark.mat using Guid(6e1691ab0ec97de4eacf796e7df5dbb9) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '084b5ee82a6bb47bc265c9321082feae') in 0.010189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Shaders/Plantago.shadergraph
+  artifactKey: Guid(53acb9a210cc749ffa0c160964ca6d69) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Shaders/Plantago.shadergraph using Guid(53acb9a210cc749ffa0c160964ca6d69) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '484b2ffefdc5c26fb9d4ca035e5abc64') in 0.035580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Controllers/MarcusController.controller
+  artifactKey: Guid(f776285896aa843e98a01eede07210ab) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Controllers/MarcusController.controller using Guid(f776285896aa843e98a01eede07210ab) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'caec78e29d8260292492a40c7c541f27') in 0.132263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.045344 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Material_A_Glass_Transparent_Blue_Dark_01.mat
+  artifactKey: Guid(1ca493a2d83d7d64ba8a219f8e137576) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Material_A_Glass_Transparent_Blue_Dark_01.mat using Guid(1ca493a2d83d7d64ba8a219f8e137576) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'a2fdeabba707bfef09f9323fa05dc3b1') in 0.009118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Materials/Galaxy/New Lighting Settings.lighting
+  artifactKey: Guid(bca23d543bf734a958651efca24ccb94) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Materials/Galaxy/New Lighting Settings.lighting using Guid(bca23d543bf734a958651efca24ccb94) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'fb6e2361653981b1ca3e3b697826776b') in 0.134007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Scenes/MusicRoom/Lightmap-5_comp_light.exr
+  artifactKey: Guid(b62e0801a8cea4b46bc9306d4963ffe0) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Scenes/MusicRoom/Lightmap-5_comp_light.exr using Guid(b62e0801a8cea4b46bc9306d4963ffe0) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '16c499ac2de73e36726dd2bf27763a2d') in 0.819107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Scenes/MusicRoom/Lightmap-6_comp_light.exr
+  artifactKey: Guid(00ab5b0e59166466e82cbb1b44593b07) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Scenes/MusicRoom/Lightmap-6_comp_light.exr using Guid(00ab5b0e59166466e82cbb1b44593b07) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '70de2a34ff17774b0c0dcbe1e5fa2fd8') in 0.016199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Material_A_Glass_Transparent_Brown.mat
+  artifactKey: Guid(16a4a43b54581084aa130ebf6efc1f63) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Material_A_Glass_Transparent_Brown.mat using Guid(16a4a43b54581084aa130ebf6efc1f63) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '39663a58f8dd70bf9ba59093544db63b') in 0.007984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/European Wildflowers 1/Materials/Anthemis_tinctoria.mat
+  artifactKey: Guid(92f88b88575158d4d96de75b3fe30045) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Materials/Anthemis_tinctoria.mat using Guid(92f88b88575158d4d96de75b3fe30045) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '43f41ec10028202b8a961fed415f24e7') in 0.014902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/European Wildflowers 1/Meshes/Plantago_media_C.obj
+  artifactKey: Guid(0d873e20070b62548a2117b88ca3d827) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Meshes/Plantago_media_C.obj using Guid(0d873e20070b62548a2117b88ca3d827) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '62f18279ddd4776977a2874d78254b2d') in 0.138322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/European Wildflowers 1/Meshes/Plantago_media_B.obj
+  artifactKey: Guid(8d1741cd902228e44a725cfe8e66108c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Meshes/Plantago_media_B.obj using Guid(8d1741cd902228e44a725cfe8e66108c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'c61e381cab20d81f494ab9c57ef4126f') in 0.021234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Materials/Flowers/FlowerPetal.mat
+  artifactKey: Guid(182c3ce56f0ed43d6a39a8ec4eb22f32) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Materials/Flowers/FlowerPetal.mat using Guid(182c3ce56f0ed43d6a39a8ec4eb22f32) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '8b2a1802e40225c952b6e5ef16770bb9') in 0.011945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Materials/Music_Ash.mat
+  artifactKey: Guid(a5d7877189f10ec4db6bbceaeecd38e9) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Materials/Music_Ash.mat using Guid(a5d7877189f10ec4db6bbceaeecd38e9) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '92dcebe676bf687f01c4a1fea777f7ca') in 0.008618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/European Wildflowers 1/Anthemis tinctoria/Anthemis_tinctoria_B.prefab
+  artifactKey: Guid(842dc253e5bb4cf42ba896240c8b653c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Anthemis tinctoria/Anthemis_tinctoria_B.prefab using Guid(842dc253e5bb4cf42ba896240c8b653c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '0374f519128affe96ef20f21bc70fe47') in 0.016444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/European Wildflowers 1/Materials/Plantago_media.mat
+  artifactKey: Guid(6e22d25d80639894ca147292c279695a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Materials/Plantago_media.mat using Guid(6e22d25d80639894ca147292c279695a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'd8e4f3e822b4ac87a38f576010a562c6') in 0.009470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Materials/New Folder/New Material.mat
+  artifactKey: Guid(6efc9dbcacc254d0c925a82131b41a0e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Materials/New Folder/New Material.mat using Guid(6efc9dbcacc254d0c925a82131b41a0e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '270e14c48d5d9c26924d1e053438e6d8') in 0.006413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Scenes/MusicRoom/ReflectionProbe-0.exr
+  artifactKey: Guid(60eeb5cac59214c9f870d60e6a61bdb5) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Scenes/MusicRoom/ReflectionProbe-0.exr using Guid(60eeb5cac59214c9f870d60e6a61bdb5) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '576da44359556d6f1f831c0999e9573c') in 0.020874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/European Wildflowers 1/Meshes/Campanula_patula_A.obj
+  artifactKey: Guid(f20780184f3b5ac488f4072b57cd6155) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Meshes/Campanula_patula_A.obj using Guid(f20780184f3b5ac488f4072b57cd6155) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'c5af48c1cba5663f9d25b2c9fa7abf43') in 0.021124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/European Wildflowers 1/Plantago media/Plantago_media_B.prefab
+  artifactKey: Guid(bc03485e3fd7eea4eb3e9c8c64161c3e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Plantago media/Plantago_media_B.prefab using Guid(bc03485e3fd7eea4eb3e9c8c64161c3e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'eb396cbcc1e6861f502939ade03b3352') in 0.009957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Materials/Music_PianoAntiqueMat.mat
+  artifactKey: Guid(cac1bc21ec713c840b4a56808176e3c7) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Materials/Music_PianoAntiqueMat.mat using Guid(cac1bc21ec713c840b4a56808176e3c7) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '7a548fc6df4089af95ad5a3cfaa7a6a2') in 0.020523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/European Wildflowers 1/Textures/Camplanula_glomerata_cutout_1024.png
+  artifactKey: Guid(2e95d17b5af7fc5479142c8bf4faf7db) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Textures/Camplanula_glomerata_cutout_1024.png using Guid(2e95d17b5af7fc5479142c8bf4faf7db) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '42f268e0419e10b3a9c07a78afe21982') in 0.015444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/European Wildflowers 1/Meshes/Papaver_nudicaule_batch_3.obj
+  artifactKey: Guid(db3540b3e9a8eaa4a9cccb11a58a59b4) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Meshes/Papaver_nudicaule_batch_3.obj using Guid(db3540b3e9a8eaa4a9cccb11a58a59b4) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'b805e7519426b8343dda5c70fb3ac2ea') in 0.021424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/European Wildflowers 1/Textures/Plantago_media_cutout_1024.png
+  artifactKey: Guid(057c10a8696f25a439cb019e3dffcbbb) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Textures/Plantago_media_cutout_1024.png using Guid(057c10a8696f25a439cb019e3dffcbbb) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '2e4fc82d9dd59e08dcf7b6bd8bb6e9d2') in 0.014320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/European Wildflowers 1/Campanula patula/Campanula_patula_B.prefab
+  artifactKey: Guid(a2988ad0316935743a70eba14bb88b78) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Campanula patula/Campanula_patula_B.prefab using Guid(a2988ad0316935743a70eba14bb88b78) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '2cf67eeab1ddd29ba431e1d87a3f9935') in 0.019859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Pattern_01_G.mat
+  artifactKey: Guid(85408302669cedb4c9f9590b9b0d3661) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Pattern_01_G.mat using Guid(85408302669cedb4c9f9590b9b0d3661) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '0300fdfb258ad2f58b7f52cf8b9249ba') in 0.013355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Materials/Flowers/Campanulla.mat
+  artifactKey: Guid(6b4872d6ea4c24f769b0a48e6a01699f) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Materials/Flowers/Campanulla.mat using Guid(6b4872d6ea4c24f769b0a48e6a01699f) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '90e3f6d61d7275707fe023be0a6412a9') in 0.009249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Pattern_01_D.mat
+  artifactKey: Guid(3d57dbaa61efdec4c8232373dcda645d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Pattern_01_D.mat using Guid(3d57dbaa61efdec4c8232373dcda645d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '494b6c5258708a8610cfad32a1b18e62') in 0.009080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Scenes/MusicRoom/Lightmap-6_comp_dir.png
+  artifactKey: Guid(858663c02e19746cdbf0987348f3de50) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Scenes/MusicRoom/Lightmap-6_comp_dir.png using Guid(858663c02e19746cdbf0987348f3de50) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '555c1d347e65ecd48ece1de61c89b223') in 0.056008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Material_A_Glass_Transparent_Green.mat
+  artifactKey: Guid(1ab97928313241d428817b530d2b720b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Material_A_Glass_Transparent_Green.mat using Guid(1ab97928313241d428817b530d2b720b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '841c0bef6d12adbe229111a1eca968e3') in 0.005982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007017 seconds.
+  path: Assets/Scripts/Utils/Utils.cs
+  artifactKey: Guid(185eff1a79e8f4df880012b503b973c9) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Scripts/Utils/Utils.cs using Guid(185eff1a79e8f4df880012b503b973c9) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '6556216318e59ecd3ba59a2e11606a4e') in 0.368747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/European Wildflowers 1/Plantago media/Plantago_media_C.prefab
+  artifactKey: Guid(8749cf93358b00a4e9a6568ca76ad5e7) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Plantago media/Plantago_media_C.prefab using Guid(8749cf93358b00a4e9a6568ca76ad5e7) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'a717620b6022717904ba4472d7a32389') in 0.012909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Materials/Material_A_Glass_Transparent_Turquoise.mat
+  artifactKey: Guid(5abd4a3442d82e94e8aed3b64c698f67) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Materials/Material_A_Glass_Transparent_Turquoise.mat using Guid(5abd4a3442d82e94e8aed3b64c698f67) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'db2d0ff3068d224889522b7c66037582') in 0.005522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/European Wildflowers 1/Campanula patula/Campanula_patula_patch.prefab
+  artifactKey: Guid(e2e8af7ef32c064438f8ebce0fe04a03) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Campanula patula/Campanula_patula_patch.prefab using Guid(e2e8af7ef32c064438f8ebce0fe04a03) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '3d5dd62ebb2053dacb14681dd03ff8f1') in 0.009035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Textures/Character/Boots leather part_DefaultMaterial_Normal.jpg
+  artifactKey: Guid(36b227a2195334e31afbc9cfb9b9492a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Character/Boots leather part_DefaultMaterial_Normal.jpg using Guid(36b227a2195334e31afbc9cfb9b9492a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'b308c88e678f0cbc103d0bf492601ebb') in 0.020215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Scenes/MusicRoom/Lightmap-5_comp_dir.png
+  artifactKey: Guid(a015020c6cba5430ca05736d282153a7) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Scenes/MusicRoom/Lightmap-5_comp_dir.png using Guid(a015020c6cba5430ca05736d282153a7) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '573c8d6e0a5f32d0b446db2c92b062ef') in 0.015540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/European Wildflowers 1/Campanula glomerata/Campanula_glomerata_A.prefab
+  artifactKey: Guid(6120d7e0afe844844abe58c3a89f6de2) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Campanula glomerata/Campanula_glomerata_A.prefab using Guid(6120d7e0afe844844abe58c3a89f6de2) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'aabbd25c9809eb3ec3247ff1cfbef170') in 0.010458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/European Wildflowers 1/Campanula glomerata/Campanula_glomerata_B.prefab
+  artifactKey: Guid(fcdf8392963ac034f999bd5953dd5c67) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Campanula glomerata/Campanula_glomerata_B.prefab using Guid(fcdf8392963ac034f999bd5953dd5c67) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '5d4b67c46755104543d151330fe0d2da') in 0.013496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/European Wildflowers 1/Materials/Campanula_patula.mat
+  artifactKey: Guid(db110570fa5bca24ebf43a7e0ec29993) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Materials/Campanula_patula.mat using Guid(db110570fa5bca24ebf43a7e0ec29993) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'eb0a2f2743c7329801733a59a1166223') in 0.007056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Scenes/MusicRoom/GlobalVolumeProfile.asset
+  artifactKey: Guid(87a07606db9954c50a5638f74df13d6b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Scenes/MusicRoom/GlobalVolumeProfile.asset using Guid(87a07606db9954c50a5638f74df13d6b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'da17d544e58d5f8acedaf5905112177e') in 0.011431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/European Wildflowers 1/Materials/Papaver_nudicaule.mat
+  artifactKey: Guid(2d56e5043a0965a48aae2fa5ae0e0ebd) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Materials/Papaver_nudicaule.mat using Guid(2d56e5043a0965a48aae2fa5ae0e0ebd) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '646ee88a910946a2ea17a5671387f94a') in 0.006375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Textures/Character/Boots sole_DefaultMaterial_Normal.jpg
+  artifactKey: Guid(05825f77fa6f24a74a5608ff578f09d5) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Character/Boots sole_DefaultMaterial_Normal.jpg using Guid(05825f77fa6f24a74a5608ff578f09d5) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '06ccbcfb9e039d95a22b5999e890cce5') in 0.018351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/European Wildflowers 1/Campanula patula/Campanula_patula_A.prefab
+  artifactKey: Guid(be6f04aa6ff79754d87ba1679f63dc21) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Campanula patula/Campanula_patula_A.prefab using Guid(be6f04aa6ff79754d87ba1679f63dc21) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'e3d71391de7485614b3f67bdb6ccae9c') in 0.022609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Materials/Grass/GroundGrass.mat
+  artifactKey: Guid(8191053b75d2c4118aef7aed9fbaae2a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Materials/Grass/GroundGrass.mat using Guid(8191053b75d2c4118aef7aed9fbaae2a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'fa198a60296854392f7f55f0c84a6cbb') in 0.062030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/European Wildflowers 1/DemoScene/DemoSceneSettings.lighting
+  artifactKey: Guid(a1c70cb6a426346ce823f719fe1a7c12) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/DemoScene/DemoSceneSettings.lighting using Guid(a1c70cb6a426346ce823f719fe1a7c12) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '664d90468872468fa1f63fa2b919b093') in 0.011057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/European Wildflowers 1/Papaver nudicaule/Papaver_nudicaule_B.prefab
+  artifactKey: Guid(83272c7bff866144ea36ebc043950f11) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/European Wildflowers 1/Papaver nudicaule/Papaver_nudicaule_B.prefab using Guid(83272c7bff866144ea36ebc043950f11) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '064909031cefd12d5e0f3fd58f9128a3') in 0.016398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Materials/Music_Microphone.mat
+  artifactKey: Guid(a6434993dd0bf9b4da77e8f2463c7b98) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Materials/Music_Microphone.mat using Guid(a6434993dd0bf9b4da77e8f2463c7b98) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'b950d9c00d3e095914e8bbf36b71fa6b') in 0.016504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Materials/Galaxy/GalaxyMaterial.mat
+  artifactKey: Guid(0ea2ea54c8a384ee3b4c952778abac97) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Materials/Galaxy/GalaxyMaterial.mat using Guid(0ea2ea54c8a384ee3b4c952778abac97) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '6d59e3608ea5e64fd9739d99abf5d5c1') in 0.007587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Materials/Music_Saxophone.mat
+  artifactKey: Guid(cda97246818f4bf4b9e2a3c82fcba354) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Materials/Music_Saxophone.mat using Guid(cda97246818f4bf4b9e2a3c82fcba354) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '2a74696016cba1aded43859f5a4b05be') in 0.018183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Prefabs/pfb_Music_StageLarge.prefab
+  artifactKey: Guid(70868b0f1c683f643ac26818b603994e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Prefabs/pfb_Music_StageLarge.prefab using Guid(70868b0f1c683f643ac26818b603994e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '76b9eb421f937dbb4064bfd8ec99f1b3') in 0.012657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Materials/Music_Zippo.mat
+  artifactKey: Guid(4d491f5ed86a1e14f9b32bb342ff7f0c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Materials/Music_Zippo.mat using Guid(4d491f5ed86a1e14f9b32bb342ff7f0c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '6b79e123f8cd77ce3c2f79737b711d3c') in 0.017652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Textures/Bar_Stages_NM.png
+  artifactKey: Guid(edf0094ca7e1dea4b9b7869cd80c54e2) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Textures/Bar_Stages_NM.png using Guid(edf0094ca7e1dea4b9b7869cd80c54e2) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '85d0e8086eb9e7d8a7025156027b8e06') in 0.020650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Textures/SpeakerAmp_NM.tga
+  artifactKey: Guid(cddc515451d127b478ab51ea0d869325) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Textures/SpeakerAmp_NM.tga using Guid(cddc515451d127b478ab51ea0d869325) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '04561a6a0c340d18602310c091b7f00a') in 0.018396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Mryotaisu/Scripts/MuryotaisuController.cs
+  artifactKey: Guid(0ec9bb896a697864dbb7ffe898debea8) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Mryotaisu/Scripts/MuryotaisuController.cs using Guid(0ec9bb896a697864dbb7ffe898debea8) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'c3c6a8c60e0c7d6f7e1df5e22c9a3919') in 0.005628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Textures/Saxophone_NM.tga
+  artifactKey: Guid(a73dbd5683c5f9c40bd65fcf61ebff73) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Textures/Saxophone_NM.tga using Guid(a73dbd5683c5f9c40bd65fcf61ebff73) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '214262729867d4396cbf1d75a4b69ff1') in 0.017894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Scenes/Music Terra new/Global Volume Profile 1.asset
+  artifactKey: Guid(b88667f8efe5c4e7caa7c22c0f09e797) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Scenes/Music Terra new/Global Volume Profile 1.asset using Guid(b88667f8efe5c4e7caa7c22c0f09e797) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '91518f3b115be35db90ae39f25f7a255') in 0.006314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Materials/Music_Microphone_Stand.mat
+  artifactKey: Guid(84b4808683cffcd4bbe1e4113816c14d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Materials/Music_Microphone_Stand.mat using Guid(84b4808683cffcd4bbe1e4113816c14d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '2d6bcb310cf65e967b0f907f3bd82c47') in 0.016744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Mryotaisu/Models/LevelWall.fbx
+  artifactKey: Guid(5c78dc1c12f3113448e260c9e5ffb84d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Mryotaisu/Models/LevelWall.fbx using Guid(5c78dc1c12f3113448e260c9e5ffb84d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '6f2b1a193e2da2d48a2cd512c2754b39') in 0.022354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Scenes/MusicRoom/Lightmap-0_comp_dir.png
+  artifactKey: Guid(7e64b59a650fd474bbd2793d713c1b92) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Scenes/MusicRoom/Lightmap-0_comp_dir.png using Guid(7e64b59a650fd474bbd2793d713c1b92) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '7583695ae3253fe6a9feea458733a7b5') in 0.017917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/GrassFlowers/Demo/DemoGrassFlowers.unity
+  artifactKey: Guid(679e28dd92e786342b7944447228f70c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/GrassFlowers/Demo/DemoGrassFlowers.unity using Guid(679e28dd92e786342b7944447228f70c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe) Opening scene 'Assets/GrassFlowers/Demo/DemoGrassFlowers.unity additively'
+LightingSettings: switching bake backend from 1 to 0.
+Loaded scene 'Assets/GrassFlowers/Demo/DemoGrassFlowers.unity'
+	Deserialize:            37.912 ms
+	Integration:            356.985 ms
+	Integration of assets:  0.213 ms
+	Thread Wait Time:       -0.180 ms
+	Total Operation Time:   394.930 ms
+ -> (artifact id: '96944c0b1cbcaac339547ea8bd226d5d') in 0.430763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Textures/MusicRoom/Tiles098_2K_AmbientOcclusion.jpg
+  artifactKey: Guid(13eb011a0b4cd46c4b4fbeefe11be20d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/Tiles098_2K_AmbientOcclusion.jpg using Guid(13eb011a0b4cd46c4b4fbeefe11be20d) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'a4e9ffa6423efd76f27fdc7fb5688390') in 0.017622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Textures/MusicRoom/Tiles098_2K_Displacement.jpg
+  artifactKey: Guid(1be953cf657e24ea393c0a0dc0d6ab1a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/Tiles098_2K_Displacement.jpg using Guid(1be953cf657e24ea393c0a0dc0d6ab1a) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '48a69747e269b7d770c6c88202441a45') in 0.023600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Module/Wall_20_Fake_Interior.prefab
+  artifactKey: Guid(a3de8d8bfb082684bb557eedf5052c83) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Module/Wall_20_Fake_Interior.prefab using Guid(a3de8d8bfb082684bb557eedf5052c83) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'bee1b10805e0e4562d27ba0845b7da5e') in 0.131551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_08_Interior.prefab
+  artifactKey: Guid(c987ce677d281ca4b856af459e4ad2c6) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_08_Interior.prefab using Guid(c987ce677d281ca4b856af459e4ad2c6) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '091a39bd8c2346309343a7c6c5e06cc2') in 32.559481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_19_C.prefab
+  artifactKey: Guid(9f06d583bff30d3428b39cd089893a96) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_19_C.prefab using Guid(9f06d583bff30d3428b39cd089893a96) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '165d7302f732ac7d5364037ae526a0f0') in 6.997160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_Razor_Door.prefab
+  artifactKey: Guid(13af946b7dbd55b43a827e5a0d3f9f68) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_Razor_Door.prefab using Guid(13af946b7dbd55b43a827e5a0d3f9f68) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'e120dfd5acbf6fd7691e7dc4e171166b') in 0.045487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Outdoor_Vendor_02.prefab
+  artifactKey: Guid(fb1dfb5b61bf9fe49a54789be3661639) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Outdoor_Vendor_02.prefab using Guid(fb1dfb5b61bf9fe49a54789be3661639) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'd8eefeb7c6371fd58dab5e5227447600') in 0.190873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Road_Drain_03.prefab
+  artifactKey: Guid(9d8e26bd8a7dcb441a24ab3477a5dc11) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Road_Drain_03.prefab using Guid(9d8e26bd8a7dcb441a24ab3477a5dc11) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '779ad5518990d6bd1b7948b9f275c48e') in 0.019393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Street_Lamp_03.prefab
+  artifactKey: Guid(cedd8f0e0fecb604295d82950b10df8e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Street_Lamp_03.prefab using Guid(cedd8f0e0fecb604295d82950b10df8e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '3c7070aa74e1fd5ada59b3f4d4dd7a17') in 0.024116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Sidewalk_02_Drain.prefab
+  artifactKey: Guid(6c3dbb4c6f181d14f977bd00ce0e642b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Sidewalk_02_Drain.prefab using Guid(6c3dbb4c6f181d14f977bd00ce0e642b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'b85fc2543bf7434a2c57024996207c2e') in 0.019551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Road_Deco_01.prefab
+  artifactKey: Guid(9cb84cf37dbaf5044b072b8851ca4130) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Road_Deco_01.prefab using Guid(9cb84cf37dbaf5044b072b8851ca4130) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '012a43fdc8620a7b4e8f25ea75e8ea02') in 0.016149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Sidewalk_02_Corner_Out.prefab
+  artifactKey: Guid(d53cebda6e70d6043ab0299f38ad00fe) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Sidewalk_02_Corner_Out.prefab using Guid(d53cebda6e70d6043ab0299f38ad00fe) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '260bca69925e98f11423b05ac732997f') in 0.014009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Road_Crossing_01.prefab
+  artifactKey: Guid(afe5a42d11c4f6c4ebdc158e201b5954) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Road_Crossing_01.prefab using Guid(afe5a42d11c4f6c4ebdc158e201b5954) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'dd9e26575d50d52bb7c36458145be35a') in 0.011132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/SkyTrain_Rail_01_Straight.prefab
+  artifactKey: Guid(760ace8c89063f346aa1468e24814538) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/SkyTrain_Rail_01_Straight.prefab using Guid(760ace8c89063f346aa1468e24814538) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'd7fbbeb6a5dae06d192455ad887359f6') in 0.013967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/Almgp sci-fi interior_2/texture/Materials/galaxy.mat
+  artifactKey: Guid(ffe1dd70970ae433a99efa7bc1bbafcb) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/texture/Materials/galaxy.mat using Guid(ffe1dd70970ae433a99efa7bc1bbafcb) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'f0e3208a5add3fb6254a00f26effc449') in 0.032346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Textures/MusicRoom/Metal044B_2K_Metalness.jpg
+  artifactKey: Guid(27d26fa068837418bb3ae1b7698497d3) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/Metal044B_2K_Metalness.jpg using Guid(27d26fa068837418bb3ae1b7698497d3) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '66014be63a738d4b3e128d846586ff7a') in 0.049134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Module/Wall_35_A.prefab
+  artifactKey: Guid(aa3dd92afa5d1bb4c8407ef519356776) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Module/Wall_35_A.prefab using Guid(aa3dd92afa5d1bb4c8407ef519356776) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '26ad0fb95c60630934ad1a6ae3e3808f') in 0.041280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Characters/Marcus Character/Texturing/Wolf3D_Glasses.mat
+  artifactKey: Guid(06d22863a332c4dc8881719e512c5df1) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Characters/Marcus Character/Texturing/Wolf3D_Glasses.mat using Guid(06d22863a332c4dc8881719e512c5df1) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '98138e55f35b11cbe2cf74ccb5e152b2') in 0.007973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Module/Wall_20_Fake_Interior_Middle.prefab
+  artifactKey: Guid(16e9ff8fe8c8d6244ba1f00f7c011cd2) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Module/Wall_20_Fake_Interior_Middle.prefab using Guid(16e9ff8fe8c8d6244ba1f00f7c011cd2) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '7eccfea4c16e902af6e527e195a56d86') in 0.145946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Vending_Machine_03.prefab
+  artifactKey: Guid(81da12b7f4ddc364894ce1ac3c93695e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Vending_Machine_03.prefab using Guid(81da12b7f4ddc364894ce1ac3c93695e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'f122d7eae4aa1864bfffdeb57a403e54') in 0.046641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Musical Instruments and Musician Props/_Textures/Beer01_DF.png
+  artifactKey: Guid(a5b292beba8160d42860c5d2864cfa98) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Musical Instruments and Musician Props/_Textures/Beer01_DF.png using Guid(a5b292beba8160d42860c5d2864cfa98) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '8e57303bf63819591d562b137bcbd4b6') in 0.025123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Textures/MusicRoom/PaintedPlaster014_2K_Displacement.jpg
+  artifactKey: Guid(0ac4246562314422a85fd52983c2681c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/PaintedPlaster014_2K_Displacement.jpg using Guid(0ac4246562314422a85fd52983c2681c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'cd93846399ce5f3a7e8f534d8d641377') in 0.018882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Module/Wall_32.prefab
+  artifactKey: Guid(ab7c5d5ea1ba2b2488e4b6af1f7acae5) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Module/Wall_32.prefab using Guid(ab7c5d5ea1ba2b2488e4b6af1f7acae5) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '9839ab2e893a64ad492c99ecf2f1bf34') in 0.022246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/SkyTrain_Support_Straight.prefab
+  artifactKey: Guid(93d2eaf27b3a83c45a16bb31264e0815) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/SkyTrain_Support_Straight.prefab using Guid(93d2eaf27b3a83c45a16bb31264e0815) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'b0952e11a2613c21f7b67a5e1e221183') in 0.023687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Textures/Marcus Textures/outfit-bodysuit-01-v2-m-bottom-D.jpeg
+  artifactKey: Guid(34997484b97e542eebe3fe90bef862e5) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Marcus Textures/outfit-bodysuit-01-v2-m-bottom-D.jpeg using Guid(34997484b97e542eebe3fe90bef862e5) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '85cbc77865ecfe6d557b393bdf5ece41') in 0.922112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Sidewalk_01_Corner_In.prefab
+  artifactKey: Guid(4d7f90ef66d89ee4a82e498b8a0ad769) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Sidewalk_01_Corner_In.prefab using Guid(4d7f90ef66d89ee4a82e498b8a0ad769) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '4abc04579427ce27c5c0afe9babd0c3f') in 0.020604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Vending_Machine_04.prefab
+  artifactKey: Guid(4507ca0f01bc3bb49919d78fef647000) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Vending_Machine_04.prefab using Guid(4507ca0f01bc3bb49919d78fef647000) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '8968db10a79a18b90950142db0b27ec8') in 0.093648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Sign & Graffiti & Poster/Signboard_05_Rotate_Z.cs
+  artifactKey: Guid(7de07e1115ba0214f8e1fc8b45dbfa25) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Sign & Graffiti & Poster/Signboard_05_Rotate_Z.cs using Guid(7de07e1115ba0214f8e1fc8b45dbfa25) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '36fdb56a5c1094f0e9f44cc574a97e62') in 0.015677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_15_A.prefab
+  artifactKey: Guid(62f22411d8a43a546b7dfecbe6855824) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_15_A.prefab using Guid(62f22411d8a43a546b7dfecbe6855824) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '0d44fc42e62666ab728b4882ba0f039d') in 12.299059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown/Lightmap-101_comp_light.exr
+  artifactKey: Guid(15600b61f66a3eb42bbcb156cd8f620c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown/Lightmap-101_comp_light.exr using Guid(15600b61f66a3eb42bbcb156cd8f620c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '2e018cd6c520db254145dcb4c315ade0') in 0.027942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Textures/MusicRoom/GroundGrassGreenPatchy006_NRM_2K.jpg
+  artifactKey: Guid(c778fad9fea784262993b27906a1a4a3) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/GroundGrassGreenPatchy006_NRM_2K.jpg using Guid(c778fad9fea784262993b27906a1a4a3) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'f3f2cff39a9f825733e7ea90546bde76') in 0.026401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_09_A.prefab
+  artifactKey: Guid(3ec0eb5486aed58459b2e5d69f1c62aa) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_09_A.prefab using Guid(3ec0eb5486aed58459b2e5d69f1c62aa) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '7e88bf7fb6566e07b24b836e5260d40e') in 0.019036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Sign & Graffiti & Poster/Signboard_Preset_02_A.prefab
+  artifactKey: Guid(b0ff481ce09418947addcd8ac66a9331) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Sign & Graffiti & Poster/Signboard_Preset_02_A.prefab using Guid(b0ff481ce09418947addcd8ac66a9331) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '177a3a8164d28f7a629af397a387c55f') in 0.084826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_05.prefab
+  artifactKey: Guid(bf2fa3c68aafa7f4292f0ee4ba8d27c7) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_05.prefab using Guid(bf2fa3c68aafa7f4292f0ee4ba8d27c7) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '0a86a24325d7f945203c5258d75cb99a') in 0.015159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Textures/MusicRoom/PaintedPlaster014_2K_NormalGL.jpg
+  artifactKey: Guid(2d70fd7d7ca884621b13a1e1b42ad6ba) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/PaintedPlaster014_2K_NormalGL.jpg using Guid(2d70fd7d7ca884621b13a1e1b42ad6ba) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '4508e3559276f9de9f896c48ba67e370') in 0.018794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Sign & Graffiti & Poster/Poster_Wall_06.prefab
+  artifactKey: Guid(c8291c0f5ab882343bac75a0b3e9785e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Sign & Graffiti & Poster/Poster_Wall_06.prefab using Guid(c8291c0f5ab882343bac75a0b3e9785e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '39eb0d97fcfc86a7ec8e255fa5dddbd8') in 0.017497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Street_Lamp_02.prefab
+  artifactKey: Guid(cd1a901ea29357e4ab247ac48fc017f5) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Street_Lamp_02.prefab using Guid(cd1a901ea29357e4ab247ac48fc017f5) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '3a28823db7266659940b3e7138f8bf09') in 0.078490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Textures/MusicRoom/PavingStones119_2K_Displacement.jpg
+  artifactKey: Guid(07072c55423cd43dcabcca2687e43976) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/MusicRoom/PavingStones119_2K_Displacement.jpg using Guid(07072c55423cd43dcabcca2687e43976) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '0459c1a18c2918db9c085e9c2fcf4d40') in 0.025856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown/Lightmap-102_comp_light.exr
+  artifactKey: Guid(f3e415b40d4d1f34aba260ea3bb31f1c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown/Lightmap-102_comp_light.exr using Guid(f3e415b40d4d1f34aba260ea3bb31f1c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'ba5dd99dc2913f06dc67bef745f46a1e') in 0.047065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Vending_Machine_01.prefab
+  artifactKey: Guid(d87abb1a8acec2f419fc3df4bba5703b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Vending_Machine_01.prefab using Guid(d87abb1a8acec2f419fc3df4bba5703b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '2d38cc5aa2a1f83cb566c34386ce37a3') in 0.050199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Textures/Character/DefaultMaterial_Normal.png
+  artifactKey: Guid(383421fa38e1c4bf49bcbd581609eaec) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Character/DefaultMaterial_Normal.png using Guid(383421fa38e1c4bf49bcbd581609eaec) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '12be0bdb169ec8c5f2ec8fe5f85023f2') in 0.022420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Text/手板_THE DATA LAB_06-7.prefab
+  artifactKey: Guid(4bb1f441b8afef14c97836450f74d359) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Text/手板_THE DATA LAB_06-7.prefab using Guid(4bb1f441b8afef14c97836450f74d359) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '37a9be07afe60822c64d519204000e20') in 0.017556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Text/COPS-NX 08.prefab
+  artifactKey: Guid(047809aff78a9cc448286169def684fa) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Text/COPS-NX 08.prefab using Guid(047809aff78a9cc448286169def684fa) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '3956aca600a0d8ffc20e292a7dffa446') in 0.013668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Textures/Marcus Textures/outfit-bodysuit-01-v2-m-top-D.jpeg
+  artifactKey: Guid(cfee299b606e6466cb74b60a6b53b01e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Marcus Textures/outfit-bodysuit-01-v2-m-top-D.jpeg using Guid(cfee299b606e6466cb74b60a6b53b01e) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'a6a05249f14c31f6608bcb34f3a7a972') in 0.029290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_06.prefab
+  artifactKey: Guid(e21a900bbd09c0048ade5c020fed0c47) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Fence_06.prefab using Guid(e21a900bbd09c0048ade5c020fed0c47) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'c59b8a459b450cc2b6c7f3bccbca4449') in 0.019540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Almgp sci-fi interior_2/texture/Materials/lensDOV.mat
+  artifactKey: Guid(dea098ca4da5b4333b4ef17aaabee738) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Almgp sci-fi interior_2/texture/Materials/lensDOV.mat using Guid(dea098ca4da5b4333b4ef17aaabee738) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '7b294b001e4dfab4285dd7cdcdf6e35e') in 0.014193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Road_Drain_02.prefab
+  artifactKey: Guid(8be613e27fdbf804a821b3eacc87f5e0) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Road/Road_Drain_02.prefab using Guid(8be613e27fdbf804a821b3eacc87f5e0) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '5c29eed06c4f081993d7a1ec37852cc6') in 0.020645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Poster/3840x1080/新しい細胞を入れて_01.png
+  artifactKey: Guid(acc81136d8d86f8479d7c5c88ddc05da) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Poster/3840x1080/新しい細胞を入れて_01.png using Guid(acc81136d8d86f8479d7c5c88ddc05da) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'c3f980a65ce383a951e9d3968a612590') in 0.016615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Textures/Glasses/Metal012_4K_Normal.jpg
+  artifactKey: Guid(f75266de4638c41bd85f2fadeba37221) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Glasses/Metal012_4K_Normal.jpg using Guid(f75266de4638c41bd85f2fadeba37221) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'aac82b993ddd5f24617c23a449b7c659') in 0.021424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Textures/Marcus Textures/outfit-bodysuit-01-v2-m-footwear-N.jpeg
+  artifactKey: Guid(0d3660b6934814edbafe2223f99618fc) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Marcus Textures/outfit-bodysuit-01-v2-m-footwear-N.jpeg using Guid(0d3660b6934814edbafe2223f99618fc) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'f26af16f0a3578fb69937bb3f230ac61') in 0.015674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown/Lightmap-111_comp_shadowmask.png
+  artifactKey: Guid(cb289dea147bc9e4db783c73d330a873) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Scenes/Cyberpunk Downtown/Lightmap-111_comp_shadowmask.png using Guid(cb289dea147bc9e4db783c73d330a873) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '611b5f5a8f00f2eb9a10ac05a4303fbf') in 0.018042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Sign & Graffiti & Poster/Graffiti_Wall_05.prefab
+  artifactKey: Guid(3337ee828432e1d438e680a29476624c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Sign & Graffiti & Poster/Graffiti_Wall_05.prefab using Guid(3337ee828432e1d438e680a29476624c) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '017f4e0b821542f117d390e972169983') in 0.013521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Textures/Character/This is the real one HAIR_DefaultMaterial_Normal.png
+  artifactKey: Guid(6ca7e55a29fe94dfdaedc605394b8901) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Textures/Character/This is the real one HAIR_DefaultMaterial_Normal.png using Guid(6ca7e55a29fe94dfdaedc605394b8901) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: '3a11814a9eb9335619d99eae005b647e') in 0.023482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Sign & Graffiti & Poster/Signboard_Support_02.prefab
+  artifactKey: Guid(e354ddc4f8728be47b78abbca8de8593) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Sign & Graffiti & Poster/Signboard_Support_02.prefab using Guid(e354ddc4f8728be47b78abbca8de8593) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)  -> (artifact id: 'ed245dc5a7b0a0f504a431abe29ec40f') in 0.027104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_15_C.prefab
+  artifactKey: Guid(85757d65e3446b44599c84c08c44e88b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe)
+Start importing Assets/Cyberpunk Downtown Vol.1/Prefabs/Building_Preset/Building_Preset_15_C.prefab using Guid(85757d65e3446b44599c84c08c44e88b) Importer(2089858483,c653a7c40615fbf8c82c05b109e42dfe) Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
